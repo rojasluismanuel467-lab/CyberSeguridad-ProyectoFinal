@@ -1038,138 +1038,137 @@ EXP-001036,RES-05,mesa_id,MESA-021,05_resultados_mesa.csv,media,Porcentaje atíp
 EXP-001037,RES-05,mesa_id,MESA-050,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
 EXP-001038,RES-05,mesa_id,MESA-031,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
 EXP-001039,RES-05,mesa_id,MESA-018,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
-EXP-001040,LOG-01,evento_id,EVT-0000057,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001041,LOG-01,evento_id,EVT-0000284,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001042,LOG-01,evento_id,EVT-0001530,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001043,LOG-01,evento_id,EVT-0000150,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001044,LOG-01,evento_id,EVT-0001035,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001045,LOG-01,evento_id,EVT-0000796,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001046,LOG-01,evento_id,EVT-0001312,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001047,LOG-01,evento_id,EVT-0000304,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001048,LOG-01,evento_id,EVT-0001090,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001049,LOG-01,evento_id,EVT-0000689,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001050,LOG-01,evento_id,EVT-0000082,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001051,LOG-01,evento_id,EVT-0001078,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001052,LOG-01,evento_id,EVT-0000654,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001053,LOG-01,evento_id,EVT-0000596,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001054,LOG-01,evento_id,EVT-0001229,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001055,LOG-01,evento_id,EVT-0000774,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001056,LOG-01,evento_id,EVT-0001088,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001057,LOG-01,evento_id,EVT-0000328,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001058,LOG-01,evento_id,EVT-0000492,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001059,LOG-01,evento_id,EVT-0001289,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001060,LOG-02,evento_id,EVT-0001635,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001061,LOG-02,evento_id,EVT-0001564,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001062,LOG-02,evento_id,EVT-0001390,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001063,LOG-02,evento_id,EVT-0001162,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001064,LOG-02,evento_id,EVT-0001154,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001065,LOG-02,evento_id,EVT-0000126,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001066,LOG-02,evento_id,EVT-0001530,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001067,LOG-02,evento_id,EVT-0001258,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001068,LOG-02,evento_id,EVT-0001023,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001069,LOG-02,evento_id,EVT-0000059,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001070,LOG-02,evento_id,EVT-0000584,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001071,LOG-02,evento_id,EVT-0000731,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001072,LOG-02,evento_id,EVT-0001571,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001073,LOG-02,evento_id,EVT-0000157,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001074,LOG-02,evento_id,EVT-0001412,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001075,LOG-02,evento_id,EVT-0001130,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001076,LOG-02,evento_id,EVT-0001098,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001077,LOG-02,evento_id,EVT-0001108,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001078,LOG-02,evento_id,EVT-0001768,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001079,LOG-02,evento_id,EVT-0000319,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001080,LOG-02,evento_id,EVT-0000555,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001081,LOG-02,evento_id,EVT-0001307,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001082,LOG-02,evento_id,EVT-0001341,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001083,LOG-02,evento_id,EVT-0001617,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001084,LOG-02,evento_id,EVT-0000560,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001085,LOG-02,evento_id,EVT-0000453,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001086,LOG-02,evento_id,EVT-0000759,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001087,LOG-02,evento_id,EVT-0000854,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001088,LOG-02,evento_id,EVT-0001319,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001089,LOG-02,evento_id,EVT-0001344,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001090,LOG-02,evento_id,EVT-0000295,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001091,LOG-02,evento_id,EVT-0000851,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001092,LOG-02,evento_id,EVT-0001106,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001093,LOG-02,evento_id,EVT-0000172,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
-EXP-001094,LOG-03,usuario_id,USR-0026,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001095,LOG-03,usuario_id,USR-0053,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001096,LOG-03,usuario_id,USR-0018,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001097,LOG-03,usuario_id,USR-0060,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001098,LOG-03,usuario_id,USR-0027,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001099,LOG-03,usuario_id,USR-0045,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001100,LOG-03,usuario_id,USR-0041,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001101,LOG-03,usuario_id,USR-0057,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
-EXP-001102,LOG-04,usuario_id,USR-0041,06_logs_eventos.csv,media,Múltiples intentos fallidos de acceso.
-EXP-001103,LOG-05,evento_id,EVT-0000973,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001104,LOG-05,evento_id,EVT-0001078,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001105,LOG-05,evento_id,EVT-0000925,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001106,LOG-05,evento_id,EVT-0000111,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001107,LOG-05,evento_id,EVT-0000269,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001108,LOG-05,evento_id,EVT-0000153,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001109,LOG-05,evento_id,EVT-0001465,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001110,LOG-05,evento_id,EVT-0000481,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001111,LOG-05,evento_id,EVT-0001447,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001112,LOG-05,evento_id,EVT-0001010,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001113,LOG-05,evento_id,EVT-0000129,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001114,LOG-05,evento_id,EVT-0001007,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001115,LOG-05,evento_id,EVT-0001192,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001116,LOG-05,evento_id,EVT-0001722,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001117,LOG-05,evento_id,EVT-0001664,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001118,LOG-05,evento_id,EVT-0000944,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001119,LOG-05,evento_id,EVT-0001014,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001120,LOG-05,evento_id,EVT-0000904,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001121,LOG-05,evento_id,EVT-0001673,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001122,LOG-05,evento_id,EVT-0000856,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
-EXP-001123,LOG-06,evento_id,EVT-0001805,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001124,LOG-06,evento_id,EVT-0001696,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001125,LOG-06,evento_id,EVT-0000272,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001126,LOG-06,evento_id,EVT-0000922,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001127,LOG-06,evento_id,EVT-0001261,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001128,LOG-06,evento_id,EVT-0000643,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001129,LOG-06,evento_id,EVT-0001089,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001130,LOG-06,evento_id,EVT-0001318,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001131,LOG-06,evento_id,EVT-0000076,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001132,LOG-06,evento_id,EVT-0001249,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001133,LOG-06,evento_id,EVT-0000340,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001134,LOG-06,evento_id,EVT-0000610,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001135,LOG-06,evento_id,EVT-0001114,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001136,LOG-06,evento_id,EVT-0001415,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001137,LOG-06,evento_id,EVT-0001535,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
-EXP-001138,INT-01,archivo_id,ARC-000044,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001139,INT-01,archivo_id,ARC-000105,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001140,INT-01,archivo_id,ARC-000004,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001141,INT-01,archivo_id,ARC-000024,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001142,INT-01,archivo_id,ARC-000155,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001143,INT-01,archivo_id,ARC-000067,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001144,INT-01,archivo_id,ARC-000118,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001145,INT-01,archivo_id,ARC-000075,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001146,INT-01,archivo_id,ARC-000032,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001147,INT-01,archivo_id,ARC-000063,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001148,INT-01,archivo_id,ARC-000022,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001149,INT-01,archivo_id,ARC-000122,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
-EXP-001150,INT-02,archivo_id,ARC-000091,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001151,INT-02,archivo_id,ARC-000009,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001152,INT-02,archivo_id,ARC-000125,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001153,INT-02,archivo_id,ARC-000055,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001154,INT-02,archivo_id,ARC-000002,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001155,INT-02,archivo_id,ARC-000146,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001156,INT-02,archivo_id,ARC-000122,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001157,INT-02,archivo_id,ARC-000126,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001158,INT-02,archivo_id,ARC-000052,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
-EXP-001159,INT-03,archivo_id,ARC-000076,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001160,INT-03,archivo_id,ARC-000074,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001161,INT-03,archivo_id,ARC-000067,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001162,INT-03,archivo_id,ARC-000134,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001163,INT-03,archivo_id,ARC-000084,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001164,INT-03,archivo_id,ARC-000142,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001165,INT-03,archivo_id,ARC-000100,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001166,INT-03,archivo_id,ARC-000086,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
-EXP-001167,INT-04,archivo_id,ARC-000077,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
-EXP-001168,INT-04,archivo_id,ARC-000113,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
-EXP-001169,INT-04,archivo_id,ARC-000109,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
-EXP-001170,INT-04,archivo_id,ARC-000038,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
-EXP-001171,INT-04,archivo_id,ARC-000069,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
-EXP-001172,INT-04,archivo_id,ARC-000138,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
-EXP-001173,INT-04,archivo_id,ARC-000019,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
-EXP-001174,INT-04,archivo_id,ARC-000101,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001040,LOG-01,evento_id,EVT-0001553,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001041,LOG-01,evento_id,EVT-0000491,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001042,LOG-01,evento_id,EVT-0000477,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001043,LOG-01,evento_id,EVT-0001297,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001044,LOG-01,evento_id,EVT-0000972,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001045,LOG-01,evento_id,EVT-0001292,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001046,LOG-01,evento_id,EVT-0001428,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001047,LOG-01,evento_id,EVT-0001572,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001048,LOG-01,evento_id,EVT-0001347,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001049,LOG-01,evento_id,EVT-0001788,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001050,LOG-01,evento_id,EVT-0000061,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001051,LOG-01,evento_id,EVT-0001104,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001052,LOG-01,evento_id,EVT-0000910,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001053,LOG-01,evento_id,EVT-0000121,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001054,LOG-01,evento_id,EVT-0000479,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001055,LOG-01,evento_id,EVT-0000717,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001056,LOG-01,evento_id,EVT-0000736,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001057,LOG-01,evento_id,EVT-0000769,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001058,LOG-01,evento_id,EVT-0001779,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001059,LOG-01,evento_id,EVT-0001358,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001060,LOG-02,evento_id,EVT-0001552,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001061,LOG-02,evento_id,EVT-0000470,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001062,LOG-02,evento_id,EVT-0000564,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001063,LOG-02,evento_id,EVT-0000637,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001064,LOG-02,evento_id,EVT-0001232,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001065,LOG-02,evento_id,EVT-0000347,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001066,LOG-02,evento_id,EVT-0000759,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001067,LOG-02,evento_id,EVT-0001726,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001068,LOG-02,evento_id,EVT-0001622,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001069,LOG-02,evento_id,EVT-0000535,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001070,LOG-02,evento_id,EVT-0001013,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001071,LOG-02,evento_id,EVT-0000657,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001072,LOG-02,evento_id,EVT-0001542,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001073,LOG-02,evento_id,EVT-0000767,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001074,LOG-02,evento_id,EVT-0000877,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001075,LOG-02,evento_id,EVT-0000994,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001076,LOG-02,evento_id,EVT-0001334,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001077,LOG-02,evento_id,EVT-0000528,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001078,LOG-02,evento_id,EVT-0000663,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001079,LOG-02,evento_id,EVT-0001075,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001080,LOG-02,evento_id,EVT-0000888,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001081,LOG-02,evento_id,EVT-0001322,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001082,LOG-02,evento_id,EVT-0000591,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001083,LOG-02,evento_id,EVT-0001349,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001084,LOG-02,evento_id,EVT-0001115,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001085,LOG-02,evento_id,EVT-0000412,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001086,LOG-02,evento_id,EVT-0000402,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001087,LOG-02,evento_id,EVT-0001225,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001088,LOG-02,evento_id,EVT-0001181,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001089,LOG-02,evento_id,EVT-0000418,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001090,LOG-02,evento_id,EVT-0001373,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001091,LOG-02,evento_id,EVT-0000342,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001092,LOG-02,evento_id,EVT-0001640,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001093,LOG-03,usuario_id,USR-0026,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001094,LOG-03,usuario_id,USR-0053,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001095,LOG-03,usuario_id,USR-0018,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001096,LOG-03,usuario_id,USR-0060,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001097,LOG-03,usuario_id,USR-0027,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001098,LOG-03,usuario_id,USR-0045,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001099,LOG-03,usuario_id,USR-0041,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001100,LOG-03,usuario_id,USR-0057,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001101,LOG-04,usuario_id,USR-0041,06_logs_eventos.csv,media,Múltiples intentos fallidos de acceso.
+EXP-001102,LOG-05,evento_id,EVT-0001194,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001103,LOG-05,evento_id,EVT-0001253,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001104,LOG-05,evento_id,EVT-0001626,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001105,LOG-05,evento_id,EVT-0001235,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001106,LOG-05,evento_id,EVT-0000256,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001107,LOG-05,evento_id,EVT-0000176,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001108,LOG-05,evento_id,EVT-0001277,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001109,LOG-05,evento_id,EVT-0001145,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001110,LOG-05,evento_id,EVT-0000315,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001111,LOG-05,evento_id,EVT-0000106,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001112,LOG-05,evento_id,EVT-0001540,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001113,LOG-05,evento_id,EVT-0001786,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001114,LOG-05,evento_id,EVT-0001597,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001115,LOG-05,evento_id,EVT-0000913,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001116,LOG-05,evento_id,EVT-0001332,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001117,LOG-05,evento_id,EVT-0001209,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001118,LOG-05,evento_id,EVT-0000709,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001119,LOG-05,evento_id,EVT-0001207,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001120,LOG-05,evento_id,EVT-0001743,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001121,LOG-05,evento_id,EVT-0000416,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001122,LOG-06,evento_id,EVT-0001206,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001123,LOG-06,evento_id,EVT-0000453,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001124,LOG-06,evento_id,EVT-0000378,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001125,LOG-06,evento_id,EVT-0001473,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001126,LOG-06,evento_id,EVT-0001269,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001127,LOG-06,evento_id,EVT-0001052,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001128,LOG-06,evento_id,EVT-0000465,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001129,LOG-06,evento_id,EVT-0001519,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001130,LOG-06,evento_id,EVT-0001504,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001131,LOG-06,evento_id,EVT-0000439,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001132,LOG-06,evento_id,EVT-0001095,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001133,LOG-06,evento_id,EVT-0000616,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001134,LOG-06,evento_id,EVT-0000343,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001135,LOG-06,evento_id,EVT-0000967,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001136,LOG-06,evento_id,EVT-0001076,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001137,INT-01,archivo_id,ARC-000073,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001138,INT-01,archivo_id,ARC-000037,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001139,INT-01,archivo_id,ARC-000025,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001140,INT-01,archivo_id,ARC-000094,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001141,INT-01,archivo_id,ARC-000068,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001142,INT-01,archivo_id,ARC-000004,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001143,INT-01,archivo_id,ARC-000044,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001144,INT-01,archivo_id,ARC-000097,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001145,INT-01,archivo_id,ARC-000154,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001146,INT-01,archivo_id,ARC-000113,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001147,INT-01,archivo_id,ARC-000034,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001148,INT-01,archivo_id,ARC-000069,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001149,INT-02,archivo_id,ARC-000068,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001150,INT-02,archivo_id,ARC-000007,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001151,INT-02,archivo_id,ARC-000121,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001152,INT-02,archivo_id,ARC-000111,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001153,INT-02,archivo_id,ARC-000036,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001154,INT-02,archivo_id,ARC-000074,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001155,INT-02,archivo_id,ARC-000041,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001156,INT-02,archivo_id,ARC-000051,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001157,INT-02,archivo_id,ARC-000001,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001158,INT-03,archivo_id,ARC-000055,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001159,INT-03,archivo_id,ARC-000053,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001160,INT-03,archivo_id,ARC-000105,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001161,INT-03,archivo_id,ARC-000003,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001162,INT-03,archivo_id,ARC-000132,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001163,INT-03,archivo_id,ARC-000139,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001164,INT-03,archivo_id,ARC-000116,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001165,INT-03,archivo_id,ARC-000075,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001166,INT-04,archivo_id,ARC-000068,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001167,INT-04,archivo_id,ARC-000118,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001168,INT-04,archivo_id,ARC-000125,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001169,INT-04,archivo_id,ARC-000033,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001170,INT-04,archivo_id,ARC-000153,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001171,INT-04,archivo_id,ARC-000040,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001172,INT-04,archivo_id,ARC-000093,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001173,INT-04,archivo_id,ARC-000049,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
