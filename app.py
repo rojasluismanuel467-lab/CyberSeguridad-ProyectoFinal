@@ -132,14 +132,14 @@ def safe_load_and_validate() -> None:
         st.session_state.validation = validation
 
         if validation["errors"]:
-            st.error("Errores de validación encontrados. Revise el detalle en esta sección.")
+            st.warning("Errores de validación encontrados. Revise el detalle en esta sección.")
         else:
             st.success("Datasets cargados y validados correctamente.")
 
     except DatasetLoadError as exc:
-        st.error(str(exc))
+        st.warning(str(exc))
     except Exception:
-        st.error("Ocurrió un problema al cargar o validar datasets.")
+        st.warning("Ocurrió un problema al cargar o validar datasets.")
 
 
 def render_ethical_warning() -> None:
@@ -302,7 +302,7 @@ def render_data_management() -> None:
                     st.code(message)
                 safe_load_and_validate()
             else:
-                st.error("No se pudieron generar datasets con el script.")
+                st.warning("No se pudieron generar datasets con el script.")
                 st.code(message)
 
     with col2:
@@ -319,7 +319,7 @@ def render_data_management() -> None:
 
         validation = st.session_state.validation or {"errors": []}
         if validation["errors"]:
-            st.error("Errores de validación:")
+            st.warning("Errores de validación:")
             for err in validation["errors"]:
                 st.write(f"- {err}")
         else:
@@ -327,7 +327,7 @@ def render_data_management() -> None:
 
         if st.button("Ejecutar análisis completo", type="primary"):
             if validation["errors"]:
-                st.error("Corrija primero los errores de validación.")
+                st.warning("Corrija primero los errores de validación.")
             else:
                 try:
                     with st.spinner("Ejecutando análisis..."):
@@ -339,7 +339,7 @@ def render_data_management() -> None:
                         st.session_state.export_paths = export_paths
                     st.success("Análisis ejecutado y reportes exportados correctamente.")
                 except Exception:
-                    st.error("No fue posible ejecutar el análisis completo.")
+                    st.warning("No fue posible ejecutar el análisis completo.")
 
 
 def render_results_stage() -> None:
