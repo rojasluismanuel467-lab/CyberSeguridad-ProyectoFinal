@@ -1,6 +1,6 @@
 # Electoral Integrity Analyzer
 
-Analizador de Integridad Electoral por Etapas — aplicación académica en Python + Streamlit para detectar anomalías en un proceso electoral simulado, organizada por etapas y con exportación de reportes.
+Aplicación académica en Python + Streamlit para detectar anomalías en un proceso electoral simulado. Organiza el análisis por etapa y exporta reportes en CSV.
 
 > **Advertencia ética:** Este sistema utiliza datos sintéticos generados con fines académicos. Las alertas no constituyen prueba de fraude electoral. Los resultados deben interpretarse como señales de revisión que requieren validación documental, técnica y contextual. No se usan datos personales reales ni se analizan procesos electorales reales.
 
@@ -49,11 +49,11 @@ flowchart TD
 | Carga | `src/data_loader/` | Lectura de CSV y validación de esquemas |
 | Dominio | `src/domain/` | Catálogo de 24 códigos de alerta y esquemas |
 | Detección | `src/detectors/` | Reglas por etapa electoral |
-| Analítica | `src/analytics/` | Z-score, score de riesgo, resumen de hallazgos |
+| Analítica | `src/analytics/` | Z-score, puntuación de riesgo, resumen de hallazgos |
 | Orquestación | `src/pipeline/` | Ejecución secuencial y consolidación de resultados |
 | Visualización | `src/visualizations/` | 5 gráficos Plotly obligatorios |
 | Exportación | `src/reports/` | Generación de 3 CSV de salida |
-| Datos | `scripts/` | Generación reproducible de datasets sintéticos |
+| Datos | `scripts/` | Producción reproducible de datasets sintéticos |
 
 ---
 
@@ -98,11 +98,11 @@ classDiagram
 
 ### Factory Method
 
-`build_default_detectors()` en `src/detectors/factory.py` devuelve la lista completa de detectores en orden de pipeline. El pipeline no sabe qué detectores existen; sólo los recibe e itera.
+`build_default_detectors()` en `src/detectors/factory.py` devuelve la lista completa de detectores en orden de ejecución. `AnalysisPipeline` no sabe qué detectores existen; sólo los recibe e itera.
 
 ### Pipeline / Chain of Responsibility
 
-`AnalysisPipeline.run()` aplica los detectores en secuencia, agrega sus DataFrames de alertas y los pasa por las etapas de analítica. Cada etapa recibe el resultado de la anterior.
+`AnalysisPipeline.run()` aplica los detectores en secuencia, agrega sus DataFrames de alertas y los pasa por las fases de analítica. Cada fase recibe el resultado de la anterior.
 
 ### Repository (Data Access Object)
 
@@ -150,12 +150,12 @@ z = (valor - μ) / σ
 
 Se aplica sobre: porcentaje de participación por mesa, tasa de votos nulos/inválidos, concentración de registros por operador, tasa de invalidación por clasificador.
 
-### Score de riesgo por entidad
+### Puntuación de riesgo por entidad
 
-Cada alerta aporta puntos según severidad. El score acumulado por mesa o entidad determina su posición en el ranking de revisión prioritaria.
+Cada alerta aporta puntos según severidad. La puntuación acumulada por mesa o entidad determina su posición en el ranking de revisión prioritaria.
 
 ```
-score = Σ (crítica × 3) + (alta × 2) + (media × 1)
+puntuación = Σ (crítica × 3) + (alta × 2) + (media × 1)
 ```
 
 | Rango | Clasificación |
@@ -174,7 +174,7 @@ Las alertas detectadas se comparan contra `08_alertas_esperadas.csv` por clave `
 
 ## Datasets sintéticos
 
-Generados con `RANDOM_SEED = 42` para reproducibilidad. Incluyen anomalías inyectadas deliberadamente.
+Producidos con `RANDOM_SEED = 42`. Incluyen anomalías inyectadas deliberadamente para ejercitar cada detector.
 
 | Archivo | Contenido |
 |---------|-----------|
