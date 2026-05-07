@@ -1,0 +1,218 @@
+"""Alert catalog and helper metadata for all anomaly codes."""
+
+from __future__ import annotations
+
+ALERT_COLUMNS = [
+    "alerta_id",
+    "codigo_alerta",
+    "severidad",
+    "etapa",
+    "entidad_tipo",
+    "entidad_id",
+    "dataset_origen",
+    "descripcion",
+    "evidencia",
+    "accion_recomendada",
+    "score",
+]
+
+ALERT_CATALOG: dict[str, dict[str, str]] = {
+    "PAD-01": {
+        "severidad": "critica",
+        "etapa": "Padrón y elegibilidad",
+        "descripcion": "Persona fallecida aparece con voto registrado",
+        "accion": "Verificar acta de defunción y trazabilidad del check-in.",
+    },
+    "PAD-02": {
+        "severidad": "critica",
+        "etapa": "Padrón y elegibilidad",
+        "descripcion": "Menor de edad aparece con voto registrado",
+        "accion": "Validar fecha de nacimiento y soporte de identificación.",
+    },
+    "PAD-03": {
+        "severidad": "alta",
+        "etapa": "Padrón y elegibilidad",
+        "descripcion": "Edad imposible o superior a 115 años",
+        "accion": "Revisar calidad de datos del padrón y fecha de nacimiento.",
+    },
+    "PAD-04": {
+        "severidad": "critica",
+        "etapa": "Padrón y elegibilidad",
+        "descripcion": "Documento cancelado aparece con voto registrado",
+        "accion": "Contrastar estado documental con fuente de registro.",
+    },
+    "PAD-05": {
+        "severidad": "critica",
+        "etapa": "Padrón y elegibilidad",
+        "descripcion": "Persona legalmente inhabilitada aparece con voto registrado",
+        "accion": "Solicitar validación jurídica y soporte de habilitación.",
+    },
+    "PAD-06": {
+        "severidad": "alta",
+        "etapa": "Padrón y elegibilidad",
+        "descripcion": "Documento duplicado en el padrón",
+        "accion": "Ejecutar deduplicación y revisión de identidad.",
+    },
+    "CIR-01": {
+        "severidad": "alta",
+        "etapa": "Circunscripción y mesa",
+        "descripcion": "Voto registrado en mesa diferente a la asignada",
+        "accion": "Contrastar acta de mesa y registro de asignación.",
+    },
+    "CIR-02": {
+        "severidad": "critica",
+        "etapa": "Circunscripción y mesa",
+        "descripcion": "Voto registrado en circunscripción no autorizada",
+        "accion": "Revisar cadena de custodia y justificación de excepción.",
+    },
+    "CIR-03": {
+        "severidad": "alta",
+        "etapa": "Circunscripción y mesa",
+        "descripcion": "Tipo de boleta no corresponde a la circunscripción",
+        "accion": "Verificar parametrización de boletas y reglas de asignación.",
+    },
+    "SUF-01": {
+        "severidad": "critica",
+        "etapa": "Registro de sufragio",
+        "descripcion": "Posible doble sufragio",
+        "accion": "Revisar eventos de check-in y control biométrico/documental.",
+    },
+    "SUF-02": {
+        "severidad": "critica",
+        "etapa": "Registro de sufragio",
+        "descripcion": "Check-in de persona no habilitada",
+        "accion": "Verificar reglas de habilitación al momento del registro.",
+    },
+    "SUF-03": {
+        "severidad": "alta",
+        "etapa": "Registro de sufragio",
+        "descripcion": "Check-in fuera del horario electoral",
+        "accion": "Auditar controles de ventana temporal de votación.",
+    },
+    "SUF-04": {
+        "severidad": "alta",
+        "etapa": "Registro de sufragio",
+        "descripcion": "Operador con concentración anómala de registros",
+        "accion": "Evaluar distribución operativa y posible abuso de cuenta.",
+    },
+    "MAN-01": {
+        "severidad": "alta",
+        "etapa": "Escrutinio manual",
+        "descripcion": "Voto válido declarado inválido",
+        "accion": "Revisar muestras de clasificación y capacitación de jurados.",
+    },
+    "MAN-02": {
+        "severidad": "alta",
+        "etapa": "Escrutinio manual",
+        "descripcion": "Voto inválido declarado válido",
+        "accion": "Auditar criterios de clasificación y trazabilidad de cambio.",
+    },
+    "MAN-03": {
+        "severidad": "media",
+        "etapa": "Escrutinio manual",
+        "descripcion": "Mesa con tasa atípica de votos inválidos",
+        "accion": "Comparar mesa con pares y validar soporte documental.",
+    },
+    "MAN-04": {
+        "severidad": "alta",
+        "etapa": "Escrutinio manual",
+        "descripcion": "Clasificador con tasa anómala de invalidación",
+        "accion": "Auditar desempeño por usuario y reasignar revisión.",
+    },
+    "RES-01": {
+        "severidad": "critica",
+        "etapa": "Resultados por mesa",
+        "descripcion": "Sufragantes registrados mayores que electores habilitados",
+        "accion": "Revisar consistencia entre padrón operativo y resultados.",
+    },
+    "RES-02": {
+        "severidad": "critica",
+        "etapa": "Resultados por mesa",
+        "descripcion": "Participación superior al 100%",
+        "accion": "Auditar consolidación de mesa y conteo de sufragantes.",
+    },
+    "RES-03": {
+        "severidad": "alta",
+        "etapa": "Resultados por mesa",
+        "descripcion": "Total reportado no coincide con total calculado",
+        "accion": "Reconciliar acta firmada vs consolidado reportado.",
+    },
+    "RES-04": {
+        "severidad": "media",
+        "etapa": "Resultados por mesa",
+        "descripcion": "Participación estadísticamente atípica",
+        "accion": "Inspeccionar mesas outlier y contexto operativo.",
+    },
+    "RES-05": {
+        "severidad": "media",
+        "etapa": "Resultados por mesa",
+        "descripcion": "Votos nulos o inválidos estadísticamente atípicos",
+        "accion": "Revisar actas de nulidad/invalidez y trazas de clasificación.",
+    },
+    "RES-06": {
+        "severidad": "media",
+        "etapa": "Resultados por mesa",
+        "descripcion": "Concentración extrema del ganador",
+        "accion": "Comparar contra patrones históricos simulados y vecinos.",
+    },
+    "LOG-01": {
+        "severidad": "critica",
+        "etapa": "Logs e integridad",
+        "descripcion": "Modificación posterior al cierre sin aprobación",
+        "accion": "Escalar revisión de control de cambios post-cierre.",
+    },
+    "LOG-02": {
+        "severidad": "critica",
+        "etapa": "Logs e integridad",
+        "descripcion": "Acción no permitida por el rol del usuario",
+        "accion": "Corregir matriz RBAC y validar permisos efectivos.",
+    },
+    "LOG-03": {
+        "severidad": "alta",
+        "etapa": "Logs e integridad",
+        "descripcion": "Usuario inactivo o no autorizado ejecuta una acción",
+        "accion": "Bloquear cuenta y revisar trazabilidad de sesión.",
+    },
+    "LOG-04": {
+        "severidad": "media",
+        "etapa": "Logs e integridad",
+        "descripcion": "Intentos fallidos repetidos",
+        "accion": "Aplicar controles de autenticación y monitoreo reforzado.",
+    },
+    "LOG-05": {
+        "severidad": "critica",
+        "etapa": "Logs e integridad",
+        "descripcion": "Hash modificado en evento no autorizado",
+        "accion": "Auditar integridad de eventos y cadena de custodia digital.",
+    },
+    "LOG-06": {
+        "severidad": "critica",
+        "etapa": "Logs e integridad",
+        "descripcion": "Usuario aprueba su propio cambio",
+        "accion": "Aplicar segregación de funciones y doble control.",
+    },
+    "INT-01": {
+        "severidad": "critica",
+        "etapa": "Logs e integridad",
+        "descripcion": "Hash original diferente del hash actual",
+        "accion": "Revisar integridad del archivo y evidencia criptográfica.",
+    },
+    "INT-02": {
+        "severidad": "critica",
+        "etapa": "Logs e integridad",
+        "descripcion": "Reporte publicado diferente del reporte firmado",
+        "accion": "Reconciliar versión firmada contra versión publicada.",
+    },
+    "INT-03": {
+        "severidad": "alta",
+        "etapa": "Logs e integridad",
+        "descripcion": "Archivo publicado antes de ser firmado",
+        "accion": "Corregir flujo de liberación y control de precondiciones.",
+    },
+    "INT-04": {
+        "severidad": "alta",
+        "etapa": "Logs e integridad",
+        "descripcion": "Archivo alterado después del cierre",
+        "accion": "Bloquear modificación tardía y activar investigación técnica.",
+    },
+}

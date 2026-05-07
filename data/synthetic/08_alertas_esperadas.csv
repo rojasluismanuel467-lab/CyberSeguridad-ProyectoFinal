@@ -1,0 +1,1174 @@
+alerta_id,codigo_alerta,entidad_tipo,entidad_id,dataset_origen,severidad,descripcion
+EXP-000001,PAD-01,voter_id,V003408,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000002,PAD-01,voter_id,V002230,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000003,PAD-01,voter_id,V003949,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000004,PAD-01,voter_id,V004014,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000005,PAD-01,voter_id,V004933,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000006,PAD-01,voter_id,V001721,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000007,PAD-01,voter_id,V000461,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000008,PAD-01,voter_id,V004233,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000009,PAD-01,voter_id,V002935,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000010,PAD-01,voter_id,V003453,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000011,PAD-01,voter_id,V003851,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000012,PAD-01,voter_id,V002638,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000013,PAD-01,voter_id,V000265,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000014,PAD-01,voter_id,V000802,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000015,PAD-01,voter_id,V002406,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000016,PAD-01,voter_id,V004867,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000017,PAD-01,voter_id,V004159,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000018,PAD-01,voter_id,V001016,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000019,PAD-01,voter_id,V000481,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000020,PAD-01,voter_id,V001407,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000021,PAD-01,voter_id,V000041,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000022,PAD-01,voter_id,V000745,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000023,PAD-01,voter_id,V000094,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000024,PAD-01,voter_id,V000656,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000025,PAD-01,voter_id,V003095,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000026,PAD-01,voter_id,V003426,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000027,PAD-01,voter_id,V001167,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000028,PAD-01,voter_id,V001821,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000029,PAD-01,voter_id,V000164,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000030,PAD-01,voter_id,V000224,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000031,PAD-01,voter_id,V004408,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000032,PAD-01,voter_id,V000630,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000033,PAD-01,voter_id,V003819,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000034,PAD-01,voter_id,V001640,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000035,PAD-01,voter_id,V004400,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000036,PAD-01,voter_id,V001658,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000037,PAD-01,voter_id,V004060,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000038,PAD-01,voter_id,V001947,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000039,PAD-01,voter_id,V003160,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000040,PAD-01,voter_id,V001323,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000041,PAD-01,voter_id,V004841,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000042,PAD-01,voter_id,V002740,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000043,PAD-01,voter_id,V000782,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000044,PAD-01,voter_id,V000502,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000045,PAD-01,voter_id,V003796,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000046,PAD-01,voter_id,V002630,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000047,PAD-01,voter_id,V001994,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000048,PAD-01,voter_id,V002590,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000049,PAD-01,voter_id,V002436,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000050,PAD-01,voter_id,V002382,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000051,PAD-01,voter_id,V000170,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000052,PAD-01,voter_id,V002096,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000053,PAD-01,voter_id,V004465,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000054,PAD-01,voter_id,V003715,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000055,PAD-01,voter_id,V003889,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000056,PAD-01,voter_id,V004113,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000057,PAD-01,voter_id,V002115,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000058,PAD-01,voter_id,V001650,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000059,PAD-01,voter_id,V001970,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000060,PAD-01,voter_id,V003893,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000061,PAD-01,voter_id,V000190,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000062,PAD-01,voter_id,V000482,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000063,PAD-01,voter_id,V003039,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000064,PAD-01,voter_id,V003552,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000065,PAD-01,voter_id,V004697,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000066,PAD-01,voter_id,V001464,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000067,PAD-01,voter_id,V004415,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000068,PAD-01,voter_id,V000054,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000069,PAD-01,voter_id,V003003,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000070,PAD-01,voter_id,V000720,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000071,PAD-01,voter_id,V000914,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000072,PAD-01,voter_id,V002588,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000073,PAD-01,voter_id,V000647,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000074,PAD-01,voter_id,V004510,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000075,PAD-01,voter_id,V004373,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000076,PAD-01,voter_id,V000045,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000077,PAD-01,voter_id,V002957,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000078,PAD-01,voter_id,V000123,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000079,PAD-01,voter_id,V004991,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000080,PAD-01,voter_id,V002479,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000081,PAD-01,voter_id,V004800,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000082,PAD-01,voter_id,V002591,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000083,PAD-01,voter_id,V001163,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000084,PAD-01,voter_id,V004391,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000085,PAD-01,voter_id,V000124,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000086,PAD-01,voter_id,V003530,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000087,PAD-01,voter_id,V003996,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000088,PAD-01,voter_id,V002678,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000089,PAD-01,voter_id,V003208,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000090,PAD-01,voter_id,V004010,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000091,PAD-01,voter_id,V001497,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000092,PAD-01,voter_id,V004189,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000093,PAD-01,voter_id,V001442,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000094,PAD-01,voter_id,V000060,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000095,PAD-01,voter_id,V000291,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000096,PAD-01,voter_id,V001390,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000097,PAD-01,voter_id,V004040,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000098,PAD-01,voter_id,V000784,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000099,PAD-01,voter_id,V003672,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000100,PAD-01,voter_id,V002262,01_padron_votantes.csv,critica,Persona fallecida marcada como activa en padrón.
+EXP-000101,PAD-02,voter_id,V000919,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000102,PAD-02,voter_id,V004184,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000103,PAD-02,voter_id,V003730,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000104,PAD-02,voter_id,V004766,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000105,PAD-02,voter_id,V004259,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000106,PAD-02,voter_id,V004028,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000107,PAD-02,voter_id,V001459,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000108,PAD-02,voter_id,V001262,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000109,PAD-02,voter_id,V002113,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000110,PAD-02,voter_id,V001451,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000111,PAD-02,voter_id,V004809,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000112,PAD-02,voter_id,V003971,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000113,PAD-02,voter_id,V002455,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000114,PAD-02,voter_id,V001426,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000115,PAD-02,voter_id,V000890,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000116,PAD-02,voter_id,V003295,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000117,PAD-02,voter_id,V002424,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000118,PAD-02,voter_id,V003806,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000119,PAD-02,voter_id,V004585,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000120,PAD-02,voter_id,V002393,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000121,PAD-02,voter_id,V003674,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000122,PAD-02,voter_id,V000181,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000123,PAD-02,voter_id,V001017,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000124,PAD-02,voter_id,V000015,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000125,PAD-02,voter_id,V004528,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000126,PAD-02,voter_id,V004694,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000127,PAD-02,voter_id,V003662,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000128,PAD-02,voter_id,V002197,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000129,PAD-02,voter_id,V003890,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000130,PAD-02,voter_id,V000438,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000131,PAD-02,voter_id,V000648,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000132,PAD-02,voter_id,V000842,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000133,PAD-02,voter_id,V001768,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000134,PAD-02,voter_id,V002704,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000135,PAD-02,voter_id,V000909,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000136,PAD-02,voter_id,V003360,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000137,PAD-02,voter_id,V000916,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000138,PAD-02,voter_id,V001137,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000139,PAD-02,voter_id,V000520,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000140,PAD-02,voter_id,V000344,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000141,PAD-02,voter_id,V001152,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000142,PAD-02,voter_id,V001433,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000143,PAD-02,voter_id,V002077,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000144,PAD-02,voter_id,V004282,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000145,PAD-02,voter_id,V003473,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000146,PAD-02,voter_id,V002632,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000147,PAD-02,voter_id,V001425,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000148,PAD-02,voter_id,V004064,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000149,PAD-02,voter_id,V001153,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000150,PAD-02,voter_id,V000813,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000151,PAD-02,voter_id,V004615,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000152,PAD-02,voter_id,V001150,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000153,PAD-02,voter_id,V003931,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000154,PAD-02,voter_id,V003783,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000155,PAD-02,voter_id,V002883,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000156,PAD-02,voter_id,V001599,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000157,PAD-02,voter_id,V000906,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000158,PAD-02,voter_id,V003337,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000159,PAD-02,voter_id,V000246,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000160,PAD-02,voter_id,V003254,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000161,PAD-02,voter_id,V000106,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000162,PAD-02,voter_id,V002712,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000163,PAD-02,voter_id,V003259,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000164,PAD-02,voter_id,V003817,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000165,PAD-02,voter_id,V004055,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000166,PAD-02,voter_id,V003737,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000167,PAD-02,voter_id,V004558,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000168,PAD-02,voter_id,V001968,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000169,PAD-02,voter_id,V004682,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000170,PAD-02,voter_id,V000486,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000171,PAD-02,voter_id,V000530,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000172,PAD-02,voter_id,V002056,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000173,PAD-02,voter_id,V000095,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000174,PAD-02,voter_id,V001646,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000175,PAD-02,voter_id,V003871,01_padron_votantes.csv,critica,Menor de edad habilitado legalmente.
+EXP-000176,PAD-03,voter_id,V004608,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000177,PAD-03,voter_id,V001339,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000178,PAD-03,voter_id,V004447,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000179,PAD-03,voter_id,V001856,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000180,PAD-03,voter_id,V004547,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000181,PAD-03,voter_id,V002828,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000182,PAD-03,voter_id,V002319,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000183,PAD-03,voter_id,V000069,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000184,PAD-03,voter_id,V004319,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000185,PAD-03,voter_id,V003551,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000186,PAD-03,voter_id,V003070,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000187,PAD-03,voter_id,V002725,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000188,PAD-03,voter_id,V004199,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000189,PAD-03,voter_id,V000924,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000190,PAD-03,voter_id,V000915,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000191,PAD-03,voter_id,V003435,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000192,PAD-03,voter_id,V003918,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000193,PAD-03,voter_id,V003742,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000194,PAD-03,voter_id,V000661,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000195,PAD-03,voter_id,V000325,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000196,PAD-03,voter_id,V000989,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000197,PAD-03,voter_id,V001281,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000198,PAD-03,voter_id,V000704,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000199,PAD-03,voter_id,V003835,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000200,PAD-03,voter_id,V002097,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000201,PAD-03,voter_id,V002756,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000202,PAD-03,voter_id,V001024,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000203,PAD-03,voter_id,V004507,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000204,PAD-03,voter_id,V002525,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000205,PAD-03,voter_id,V003868,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000206,PAD-03,voter_id,V001958,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000207,PAD-03,voter_id,V002546,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000208,PAD-03,voter_id,V000907,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000209,PAD-03,voter_id,V001360,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000210,PAD-03,voter_id,V001485,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000211,PAD-03,voter_id,V001891,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000212,PAD-03,voter_id,V001627,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000213,PAD-03,voter_id,V004338,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000214,PAD-03,voter_id,V004808,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000215,PAD-03,voter_id,V003476,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000216,PAD-03,voter_id,V004448,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000217,PAD-03,voter_id,V001134,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000218,PAD-03,voter_id,V001092,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000219,PAD-03,voter_id,V000642,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000220,PAD-03,voter_id,V001589,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000221,PAD-03,voter_id,V003652,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000222,PAD-03,voter_id,V004126,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000223,PAD-03,voter_id,V002452,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000224,PAD-03,voter_id,V000463,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000225,PAD-03,voter_id,V000495,01_padron_votantes.csv,alta,Edad superior al máximo razonable permitido.
+EXP-000226,PAD-04,voter_id,V002652,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000227,PAD-04,voter_id,V004617,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000228,PAD-04,voter_id,V000896,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000229,PAD-04,voter_id,V001386,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000230,PAD-04,voter_id,V002342,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000231,PAD-04,voter_id,V004138,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000232,PAD-04,voter_id,V002685,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000233,PAD-04,voter_id,V002155,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000234,PAD-04,voter_id,V004826,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000235,PAD-04,voter_id,V004183,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000236,PAD-04,voter_id,V003244,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000237,PAD-04,voter_id,V004141,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000238,PAD-04,voter_id,V001609,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000239,PAD-04,voter_id,V003864,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000240,PAD-04,voter_id,V004121,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000241,PAD-04,voter_id,V000507,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000242,PAD-04,voter_id,V000631,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000243,PAD-04,voter_id,V002829,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000244,PAD-04,voter_id,V002743,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000245,PAD-04,voter_id,V000822,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000246,PAD-04,voter_id,V002345,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000247,PAD-04,voter_id,V003829,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000248,PAD-04,voter_id,V004851,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000249,PAD-04,voter_id,V003296,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000250,PAD-04,voter_id,V001309,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000251,PAD-04,voter_id,V003699,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000252,PAD-04,voter_id,V002951,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000253,PAD-04,voter_id,V000043,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000254,PAD-04,voter_id,V002795,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000255,PAD-04,voter_id,V004940,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000256,PAD-04,voter_id,V000309,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000257,PAD-04,voter_id,V004537,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000258,PAD-04,voter_id,V004146,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000259,PAD-04,voter_id,V004623,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000260,PAD-04,voter_id,V000212,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000261,PAD-04,voter_id,V004853,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000262,PAD-04,voter_id,V004316,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000263,PAD-04,voter_id,V004351,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000264,PAD-04,voter_id,V001111,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000265,PAD-04,voter_id,V002893,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000266,PAD-04,voter_id,V002926,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000267,PAD-04,voter_id,V002449,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000268,PAD-04,voter_id,V004422,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000269,PAD-04,voter_id,V001124,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000270,PAD-04,voter_id,V004976,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000271,PAD-04,voter_id,V000833,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000272,PAD-04,voter_id,V004714,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000273,PAD-04,voter_id,V002903,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000274,PAD-04,voter_id,V003697,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000275,PAD-04,voter_id,V001920,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000276,PAD-04,voter_id,V003153,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000277,PAD-04,voter_id,V003050,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000278,PAD-04,voter_id,V003768,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000279,PAD-04,voter_id,V002849,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000280,PAD-04,voter_id,V004107,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000281,PAD-04,voter_id,V000156,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000282,PAD-04,voter_id,V001825,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000283,PAD-04,voter_id,V001965,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000284,PAD-04,voter_id,V003327,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000285,PAD-04,voter_id,V003298,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000286,PAD-04,voter_id,V001178,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000287,PAD-04,voter_id,V000498,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000288,PAD-04,voter_id,V002997,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000289,PAD-04,voter_id,V003510,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000290,PAD-04,voter_id,V000614,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000291,PAD-04,voter_id,V001969,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000292,PAD-04,voter_id,V000908,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000293,PAD-04,voter_id,V000622,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000294,PAD-04,voter_id,V000605,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000295,PAD-04,voter_id,V004034,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000296,PAD-04,voter_id,V003139,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000297,PAD-04,voter_id,V001865,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000298,PAD-04,voter_id,V000432,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000299,PAD-04,voter_id,V000024,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000300,PAD-04,voter_id,V004475,01_padron_votantes.csv,critica,Documento cancelado marcado como habilitado.
+EXP-000301,PAD-05,voter_id,V003614,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000302,PAD-05,voter_id,V000297,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000303,PAD-05,voter_id,V004939,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000304,PAD-05,voter_id,V002626,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000305,PAD-05,voter_id,V002787,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000306,PAD-05,voter_id,V001796,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000307,PAD-05,voter_id,V001489,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000308,PAD-05,voter_id,V003706,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000309,PAD-05,voter_id,V004598,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000310,PAD-05,voter_id,V004339,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000311,PAD-05,voter_id,V004647,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000312,PAD-05,voter_id,V002830,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000313,PAD-05,voter_id,V001525,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000314,PAD-05,voter_id,V001878,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000315,PAD-05,voter_id,V004136,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000316,PAD-05,voter_id,V004058,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000317,PAD-05,voter_id,V001617,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000318,PAD-05,voter_id,V003688,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000319,PAD-05,voter_id,V003898,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000320,PAD-05,voter_id,V001829,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000321,PAD-05,voter_id,V004704,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000322,PAD-05,voter_id,V003687,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000323,PAD-05,voter_id,V003083,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000324,PAD-05,voter_id,V002518,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000325,PAD-05,voter_id,V002251,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000326,PAD-05,voter_id,V001218,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000327,PAD-05,voter_id,V002014,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000328,PAD-05,voter_id,V001911,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000329,PAD-05,voter_id,V003401,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000330,PAD-05,voter_id,V000293,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000331,PAD-05,voter_id,V000121,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000332,PAD-05,voter_id,V001515,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000333,PAD-05,voter_id,V002808,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000334,PAD-05,voter_id,V003415,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000335,PAD-05,voter_id,V000770,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000336,PAD-05,voter_id,V004211,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000337,PAD-05,voter_id,V000657,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000338,PAD-05,voter_id,V004129,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000339,PAD-05,voter_id,V001115,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000340,PAD-05,voter_id,V004751,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000341,PAD-05,voter_id,V001736,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000342,PAD-05,voter_id,V004037,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000343,PAD-05,voter_id,V004862,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000344,PAD-05,voter_id,V000057,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000345,PAD-05,voter_id,V001557,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000346,PAD-05,voter_id,V002499,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000347,PAD-05,voter_id,V002125,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000348,PAD-05,voter_id,V004326,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000349,PAD-05,voter_id,V004588,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000350,PAD-05,voter_id,V001502,01_padron_votantes.csv,critica,Persona legalmente inhabilitada marcada como habilitada.
+EXP-000351,PAD-06,voter_id,V000668,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000352,PAD-06,voter_id,V003102,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000353,PAD-06,voter_id,V000202,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000354,PAD-06,voter_id,V001490,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000355,PAD-06,voter_id,V002943,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000356,PAD-06,voter_id,V002629,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000357,PAD-06,voter_id,V003597,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000358,PAD-06,voter_id,V000334,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000359,PAD-06,voter_id,V000195,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000360,PAD-06,voter_id,V003125,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000361,PAD-06,voter_id,V004140,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000362,PAD-06,voter_id,V001921,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000363,PAD-06,voter_id,V001387,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000364,PAD-06,voter_id,V001403,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000365,PAD-06,voter_id,V002794,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000366,PAD-06,voter_id,V001973,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000367,PAD-06,voter_id,V002567,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000368,PAD-06,voter_id,V001002,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000369,PAD-06,voter_id,V002196,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000370,PAD-06,voter_id,V000688,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000371,PAD-06,voter_id,V001145,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000372,PAD-06,voter_id,V002541,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000373,PAD-06,voter_id,V003070,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000374,PAD-06,voter_id,V002364,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000375,PAD-06,voter_id,V004794,01_padron_votantes.csv,alta,Documento hash duplicado en padrón.
+EXP-000376,CIR-01,voter_id,V004459,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000377,CIR-01,voter_id,V003884,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000378,CIR-01,voter_id,V002584,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000379,CIR-01,voter_id,V000089,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000380,CIR-01,voter_id,V000141,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000381,CIR-01,voter_id,V001058,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000382,CIR-01,voter_id,V002232,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000383,CIR-01,voter_id,V004547,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000384,CIR-01,voter_id,V000040,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000385,CIR-01,voter_id,V002878,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000386,CIR-01,voter_id,V001817,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000387,CIR-01,voter_id,V001613,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000388,CIR-01,voter_id,V002106,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000389,CIR-01,voter_id,V000734,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000390,CIR-01,voter_id,V004099,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000391,CIR-01,voter_id,V001858,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000392,CIR-01,voter_id,V002372,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000393,CIR-01,voter_id,V003081,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000394,CIR-01,voter_id,V004041,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000395,CIR-01,voter_id,V003542,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000396,CIR-01,voter_id,V001574,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000397,CIR-01,voter_id,V001873,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000398,CIR-01,voter_id,V001328,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000399,CIR-01,voter_id,V003271,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000400,CIR-01,voter_id,V000277,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000401,CIR-01,voter_id,V000273,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000402,CIR-01,voter_id,V002155,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000403,CIR-01,voter_id,V002541,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000404,CIR-01,voter_id,V002433,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000405,CIR-01,voter_id,V000766,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000406,CIR-01,voter_id,V001247,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000407,CIR-01,voter_id,V002510,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000408,CIR-01,voter_id,V002213,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000409,CIR-01,voter_id,V003775,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000410,CIR-01,voter_id,V000765,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000411,CIR-01,voter_id,V003982,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000412,CIR-01,voter_id,V001266,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000413,CIR-01,voter_id,V003059,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000414,CIR-01,voter_id,V002316,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000415,CIR-01,voter_id,V001396,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000416,CIR-01,voter_id,V003685,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000417,CIR-01,voter_id,V003128,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000418,CIR-01,voter_id,V000348,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000419,CIR-01,voter_id,V004412,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000420,CIR-01,voter_id,V000386,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000421,CIR-01,voter_id,V000679,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000422,CIR-01,voter_id,V004374,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000423,CIR-01,voter_id,V002254,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000424,CIR-01,voter_id,V003157,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000425,CIR-01,voter_id,V001148,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000426,CIR-01,voter_id,V004508,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000427,CIR-01,voter_id,V001764,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000428,CIR-01,voter_id,V001786,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000429,CIR-01,voter_id,V001322,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000430,CIR-01,voter_id,V001727,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000431,CIR-01,voter_id,V002054,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000432,CIR-01,voter_id,V001590,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000433,CIR-01,voter_id,V001793,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000434,CIR-01,voter_id,V004164,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000435,CIR-01,voter_id,V004203,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000436,CIR-01,voter_id,V004306,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000437,CIR-01,voter_id,V004529,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000438,CIR-01,voter_id,V002873,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000439,CIR-01,voter_id,V003420,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000440,CIR-01,voter_id,V004963,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000441,CIR-01,voter_id,V004989,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000442,CIR-01,voter_id,V003429,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000443,CIR-01,voter_id,V004907,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000444,CIR-01,voter_id,V003298,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000445,CIR-01,voter_id,V004598,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000446,CIR-01,voter_id,V003216,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000447,CIR-01,voter_id,V002905,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000448,CIR-01,voter_id,V000682,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000449,CIR-01,voter_id,V003767,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000450,CIR-01,voter_id,V000519,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000451,CIR-01,voter_id,V001200,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000452,CIR-01,voter_id,V003287,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000453,CIR-01,voter_id,V001585,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000454,CIR-01,voter_id,V002988,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000455,CIR-01,voter_id,V004466,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000456,CIR-01,voter_id,V003288,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000457,CIR-01,voter_id,V001228,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000458,CIR-01,voter_id,V001540,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000459,CIR-01,voter_id,V000094,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000460,CIR-01,voter_id,V002296,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000461,CIR-01,voter_id,V002776,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000462,CIR-01,voter_id,V000939,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000463,CIR-01,voter_id,V003723,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000464,CIR-01,voter_id,V003551,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000465,CIR-01,voter_id,V000242,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000466,CIR-01,voter_id,V001448,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000467,CIR-01,voter_id,V001484,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000468,CIR-01,voter_id,V001835,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000469,CIR-01,voter_id,V000088,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000470,CIR-01,voter_id,V001350,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000471,CIR-01,voter_id,V001512,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000472,CIR-01,voter_id,V002177,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000473,CIR-01,voter_id,V000160,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000474,CIR-01,voter_id,V004658,02_asignacion_mesas.csv,alta,Mesa asignada incompatible con padrón base.
+EXP-000475,CIR-02,voter_id,V001993,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000476,CIR-02,voter_id,V003488,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000477,CIR-02,voter_id,V000626,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000478,CIR-02,voter_id,V004485,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000479,CIR-02,voter_id,V001708,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000480,CIR-02,voter_id,V004502,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000481,CIR-02,voter_id,V003188,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000482,CIR-02,voter_id,V000398,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000483,CIR-02,voter_id,V002661,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000484,CIR-02,voter_id,V000718,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000485,CIR-02,voter_id,V003653,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000486,CIR-02,voter_id,V003736,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000487,CIR-02,voter_id,V002454,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000488,CIR-02,voter_id,V003440,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000489,CIR-02,voter_id,V003002,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000490,CIR-02,voter_id,V003237,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000491,CIR-02,voter_id,V004573,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000492,CIR-02,voter_id,V000093,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000493,CIR-02,voter_id,V000854,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000494,CIR-02,voter_id,V001385,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000495,CIR-02,voter_id,V002252,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000496,CIR-02,voter_id,V002627,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000497,CIR-02,voter_id,V000378,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000498,CIR-02,voter_id,V003472,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000499,CIR-02,voter_id,V001415,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000500,CIR-02,voter_id,V004916,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000501,CIR-02,voter_id,V001752,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000502,CIR-02,voter_id,V001235,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000503,CIR-02,voter_id,V004771,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000504,CIR-02,voter_id,V001142,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000505,CIR-02,voter_id,V000830,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000506,CIR-02,voter_id,V003138,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000507,CIR-02,voter_id,V001047,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000508,CIR-02,voter_id,V001965,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000509,CIR-02,voter_id,V003556,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000510,CIR-02,voter_id,V002336,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000511,CIR-02,voter_id,V003293,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000512,CIR-02,voter_id,V000407,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000513,CIR-02,voter_id,V001897,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000514,CIR-02,voter_id,V000762,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000515,CIR-02,voter_id,V001365,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000516,CIR-02,voter_id,V002219,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000517,CIR-02,voter_id,V003961,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000518,CIR-02,voter_id,V002842,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000519,CIR-02,voter_id,V003349,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000520,CIR-02,voter_id,V000495,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000521,CIR-02,voter_id,V001630,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000522,CIR-02,voter_id,V002303,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000523,CIR-02,voter_id,V003734,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000524,CIR-02,voter_id,V003593,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000525,CIR-02,voter_id,V002641,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000526,CIR-02,voter_id,V003111,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000527,CIR-02,voter_id,V003579,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000528,CIR-02,voter_id,V001387,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000529,CIR-02,voter_id,V004031,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000530,CIR-02,voter_id,V004764,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000531,CIR-02,voter_id,V003018,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000532,CIR-02,voter_id,V002360,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000533,CIR-02,voter_id,V001371,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000534,CIR-02,voter_id,V002399,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000535,CIR-02,voter_id,V004885,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000536,CIR-02,voter_id,V000110,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000537,CIR-02,voter_id,V000689,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000538,CIR-02,voter_id,V002554,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000539,CIR-02,voter_id,V002420,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000540,CIR-02,voter_id,V001310,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000541,CIR-02,voter_id,V001099,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000542,CIR-02,voter_id,V001778,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000543,CIR-02,voter_id,V002580,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000544,CIR-02,voter_id,V001739,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000545,CIR-02,voter_id,V004289,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000546,CIR-02,voter_id,V002194,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000547,CIR-02,voter_id,V000390,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000548,CIR-02,voter_id,V000400,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000549,CIR-02,voter_id,V000511,02_asignacion_mesas.csv,critica,Circunscripción autorizada inconsistente.
+EXP-000550,CIR-03,voter_id,V004872,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000551,CIR-03,voter_id,V002321,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000552,CIR-03,voter_id,V003387,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000553,CIR-03,voter_id,V002040,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000554,CIR-03,voter_id,V004711,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000555,CIR-03,voter_id,V003432,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000556,CIR-03,voter_id,V004075,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000557,CIR-03,voter_id,V002363,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000558,CIR-03,voter_id,V001494,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000559,CIR-03,voter_id,V001114,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000560,CIR-03,voter_id,V002731,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000561,CIR-03,voter_id,V000274,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000562,CIR-03,voter_id,V000592,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000563,CIR-03,voter_id,V001996,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000564,CIR-03,voter_id,V000937,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000565,CIR-03,voter_id,V001133,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000566,CIR-03,voter_id,V004544,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000567,CIR-03,voter_id,V000077,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000568,CIR-03,voter_id,V001802,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000569,CIR-03,voter_id,V002265,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000570,CIR-03,voter_id,V001149,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000571,CIR-03,voter_id,V001211,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000572,CIR-03,voter_id,V004563,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000573,CIR-03,voter_id,V004186,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000574,CIR-03,voter_id,V004772,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000575,CIR-03,voter_id,V003252,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000576,CIR-03,voter_id,V004901,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000577,CIR-03,voter_id,V001292,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000578,CIR-03,voter_id,V001202,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000579,CIR-03,voter_id,V003993,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000580,CIR-03,voter_id,V002891,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000581,CIR-03,voter_id,V000774,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000582,CIR-03,voter_id,V004722,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000583,CIR-03,voter_id,V001195,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000584,CIR-03,voter_id,V002877,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000585,CIR-03,voter_id,V000322,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000586,CIR-03,voter_id,V004621,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000587,CIR-03,voter_id,V003490,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000588,CIR-03,voter_id,V000640,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000589,CIR-03,voter_id,V002596,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000590,CIR-03,voter_id,V002778,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000591,CIR-03,voter_id,V000465,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000592,CIR-03,voter_id,V000057,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000593,CIR-03,voter_id,V000985,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000594,CIR-03,voter_id,V004423,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000595,CIR-03,voter_id,V003729,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000596,CIR-03,voter_id,V000364,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000597,CIR-03,voter_id,V004940,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000598,CIR-03,voter_id,V000793,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000599,CIR-03,voter_id,V003868,02_asignacion_mesas.csv,alta,Tipo de boleta autorizada no corresponde a circunscripción.
+EXP-000600,SUF-01,voter_id,V000876,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000601,SUF-01,voter_id,V003831,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000602,SUF-01,voter_id,V001844,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000603,SUF-01,voter_id,V004882,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000604,SUF-01,voter_id,V001347,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000605,SUF-01,voter_id,V001670,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000606,SUF-01,voter_id,V003883,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000607,SUF-01,voter_id,V002863,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000608,SUF-01,voter_id,V004109,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000609,SUF-01,voter_id,V001659,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000610,SUF-01,voter_id,V002053,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000611,SUF-01,voter_id,V000884,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000612,SUF-01,voter_id,V004188,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000613,SUF-01,voter_id,V002133,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000614,SUF-01,voter_id,V001704,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000615,SUF-01,voter_id,V000786,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000616,SUF-01,voter_id,V002032,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000617,SUF-01,voter_id,V003904,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000618,SUF-01,voter_id,V002175,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000619,SUF-01,voter_id,V004492,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000620,SUF-01,voter_id,V002629,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000621,SUF-01,voter_id,V000421,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000622,SUF-01,voter_id,V002153,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000623,SUF-01,voter_id,V003627,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000624,SUF-01,voter_id,V000516,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000625,SUF-01,voter_id,V003632,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000626,SUF-01,voter_id,V000694,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000627,SUF-01,voter_id,V000519,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000628,SUF-01,voter_id,V004142,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000629,SUF-01,voter_id,V004452,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000630,SUF-01,voter_id,V003276,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000631,SUF-01,voter_id,V004639,03_registro_sufragio.csv,critica,Votante con más de un registro de sufragio.
+EXP-000632,SUF-02,voter_id,V001994,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000633,SUF-02,voter_id,V001969,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000634,SUF-02,voter_id,V001965,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000635,SUF-02,voter_id,V001390,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000636,SUF-02,voter_id,V001497,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000637,SUF-02,voter_id,V004694,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000638,SUF-02,voter_id,V003259,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000639,SUF-02,voter_id,V000770,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000640,SUF-02,voter_id,V003706,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000641,SUF-02,voter_id,V002424,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000642,SUF-02,voter_id,V002704,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000643,SUF-02,voter_id,V002262,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000644,SUF-02,voter_id,V004040,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000645,SUF-02,voter_id,V001658,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000646,SUF-02,voter_id,V004282,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000647,SUF-02,voter_id,V001736,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000648,SUF-02,voter_id,V003674,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000649,SUF-02,voter_id,V000909,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000650,SUF-02,voter_id,V001650,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000651,SUF-02,voter_id,V001947,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000652,SUF-02,voter_id,V003672,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000653,SUF-02,voter_id,V004183,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000654,SUF-02,voter_id,V001489,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000655,SUF-02,voter_id,V001721,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000656,SUF-02,voter_id,V000054,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000657,SUF-02,voter_id,V002230,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000658,SUF-02,voter_id,V000916,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000659,SUF-02,voter_id,V003139,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000660,SUF-02,voter_id,V000246,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000661,SUF-02,voter_id,V003889,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000662,SUF-02,voter_id,V001137,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000663,SUF-02,voter_id,V000842,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000664,SUF-02,voter_id,V004714,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000665,SUF-02,voter_id,V001502,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000666,SUF-02,voter_id,V003360,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000667,SUF-02,voter_id,V002479,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000668,SUF-02,voter_id,V001459,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000669,SUF-02,voter_id,V002345,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000670,SUF-02,voter_id,V000481,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000671,SUF-02,voter_id,V003426,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000672,SUF-02,voter_id,V001911,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000673,SUF-02,voter_id,V003003,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000674,SUF-02,voter_id,V004867,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000675,SUF-02,voter_id,V001167,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000676,SUF-02,voter_id,V000657,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000677,SUF-02,voter_id,V000720,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000678,SUF-02,voter_id,V000344,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000679,SUF-02,voter_id,V002125,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000680,SUF-02,voter_id,V002951,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000681,SUF-02,voter_id,V001829,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000682,SUF-02,voter_id,V004751,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000683,SUF-02,voter_id,V001017,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000684,SUF-02,voter_id,V002588,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000685,SUF-02,voter_id,V002743,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000686,SUF-02,voter_id,V003327,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000687,SUF-02,voter_id,V004189,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000688,SUF-02,voter_id,V000502,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000689,SUF-02,voter_id,V002056,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000690,SUF-02,voter_id,V003254,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000691,SUF-02,voter_id,V004107,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000692,SUF-02,voter_id,V000822,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000693,SUF-02,voter_id,V003530,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000694,SUF-02,voter_id,V002893,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000695,SUF-02,voter_id,V004617,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000696,SUF-02,voter_id,V002197,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000697,SUF-02,voter_id,V003829,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000698,SUF-02,voter_id,V002436,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000699,SUF-02,voter_id,V004465,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000700,SUF-02,voter_id,V001865,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000701,SUF-02,voter_id,V003095,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000702,SUF-02,voter_id,V004588,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000703,SUF-02,voter_id,V000507,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000704,SUF-02,voter_id,V003871,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000705,SUF-02,voter_id,V001821,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000706,SUF-02,voter_id,V003473,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000707,SUF-02,voter_id,V000530,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000708,SUF-02,voter_id,V003614,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000709,SUF-02,voter_id,V000784,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000710,SUF-02,voter_id,V004623,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000711,SUF-02,voter_id,V003890,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000712,SUF-02,voter_id,V002829,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000713,SUF-02,voter_id,V000890,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000714,SUF-02,voter_id,V004034,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000715,SUF-02,voter_id,V004138,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000716,SUF-02,voter_id,V000486,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000717,SUF-02,voter_id,V004373,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000718,SUF-02,voter_id,V000045,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000719,SUF-02,voter_id,V000906,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000720,SUF-02,voter_id,V002808,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000721,SUF-02,voter_id,V003298,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000722,SUF-02,voter_id,V000190,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000723,SUF-02,voter_id,V000095,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000724,SUF-02,voter_id,V001451,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000725,SUF-02,voter_id,V004704,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000726,SUF-02,voter_id,V001163,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000727,SUF-02,voter_id,V004391,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000728,SUF-02,voter_id,V001825,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000729,SUF-02,voter_id,V000647,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000730,SUF-02,voter_id,V002499,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000731,SUF-02,voter_id,V002652,03_registro_sufragio.csv,critica,Check-in registrado para persona no habilitada.
+EXP-000732,CIR-02,voter_id,V000414,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000733,CIR-02,voter_id,V000150,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000734,CIR-02,voter_id,V004620,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000735,CIR-01,voter_id,V002482,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000736,CIR-01,voter_id,V000661,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000737,CIR-02,voter_id,V002013,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000738,CIR-02,voter_id,V000540,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000739,CIR-01,voter_id,V001885,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000740,CIR-01,voter_id,V001283,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000741,CIR-01,voter_id,V002810,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000742,CIR-02,voter_id,V003911,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000743,CIR-02,voter_id,V002358,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000744,CIR-01,voter_id,V000384,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000745,CIR-01,voter_id,V000454,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000746,CIR-01,voter_id,V002982,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000747,CIR-01,voter_id,V001003,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000748,CIR-02,voter_id,V003603,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000749,CIR-02,voter_id,V004061,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000750,CIR-01,voter_id,V002992,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000751,CIR-02,voter_id,V000727,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000752,CIR-02,voter_id,V000635,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000753,CIR-02,voter_id,V003827,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000754,CIR-02,voter_id,V000261,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000755,CIR-01,voter_id,V004372,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000756,CIR-01,voter_id,V004490,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000757,CIR-02,voter_id,V002963,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000758,CIR-02,voter_id,V002141,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000759,CIR-01,voter_id,V002988,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000760,CIR-01,voter_id,V003238,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000761,CIR-02,voter_id,V001469,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000762,CIR-02,voter_id,V003642,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000763,CIR-01,voter_id,V000425,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000764,CIR-01,voter_id,V001937,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000765,CIR-01,voter_id,V004725,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000766,CIR-01,voter_id,V002297,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000767,CIR-02,voter_id,V004378,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000768,CIR-01,voter_id,V001475,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000769,CIR-02,voter_id,V002914,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000770,CIR-01,voter_id,V000533,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000771,CIR-01,voter_id,V001102,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000772,CIR-01,voter_id,V004990,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000773,CIR-02,voter_id,V003042,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000774,CIR-02,voter_id,V001165,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000775,CIR-02,voter_id,V000087,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000776,CIR-02,voter_id,V003973,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000777,CIR-01,voter_id,V004301,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000778,CIR-01,voter_id,V000146,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000779,CIR-02,voter_id,V000958,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000780,CIR-02,voter_id,V002133,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000781,CIR-01,voter_id,V000466,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000782,CIR-01,voter_id,V001249,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000783,CIR-01,voter_id,V001695,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000784,CIR-02,voter_id,V004752,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000785,CIR-01,voter_id,V001865,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000786,CIR-02,voter_id,V001493,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000787,CIR-02,voter_id,V002654,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000788,CIR-01,voter_id,V001019,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000789,CIR-01,voter_id,V004318,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000790,CIR-01,voter_id,V004123,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000791,CIR-01,voter_id,V004859,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000792,CIR-02,voter_id,V003826,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000793,CIR-01,voter_id,V004769,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000794,CIR-02,voter_id,V000086,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000795,CIR-02,voter_id,V002093,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000796,CIR-02,voter_id,V004072,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000797,CIR-02,voter_id,V004555,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000798,CIR-01,voter_id,V000463,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000799,CIR-02,voter_id,V002275,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000800,CIR-01,voter_id,V001171,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000801,CIR-01,voter_id,V003916,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000802,CIR-02,voter_id,V004520,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000803,CIR-02,voter_id,V004225,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000804,CIR-02,voter_id,V003637,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000805,CIR-01,voter_id,V004319,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000806,CIR-02,voter_id,V004676,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000807,CIR-01,voter_id,V003268,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000808,CIR-01,voter_id,V003871,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000809,CIR-01,voter_id,V002780,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000810,CIR-02,voter_id,V002209,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000811,CIR-02,voter_id,V000458,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000812,CIR-01,voter_id,V000099,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000813,CIR-01,voter_id,V000596,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000814,CIR-02,voter_id,V001466,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000815,CIR-01,voter_id,V001687,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000816,CIR-02,voter_id,V003736,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000817,CIR-02,voter_id,V001565,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000818,CIR-02,voter_id,V000866,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000819,CIR-02,voter_id,V003373,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000820,CIR-02,voter_id,V000876,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000821,CIR-01,voter_id,V003790,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000822,CIR-02,voter_id,V002488,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000823,CIR-02,voter_id,V001485,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000824,CIR-01,voter_id,V001825,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000825,CIR-02,voter_id,V000343,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000826,CIR-02,voter_id,V000528,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000827,CIR-02,voter_id,V003685,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000828,CIR-02,voter_id,V001177,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000829,CIR-01,voter_id,V002622,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000830,CIR-01,voter_id,V000925,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000831,CIR-02,voter_id,V003099,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000832,CIR-02,voter_id,V001456,03_registro_sufragio.csv,critica,Voto registrado en circunscripción no autorizada.
+EXP-000833,CIR-01,voter_id,V002298,03_registro_sufragio.csv,alta,Voto registrado en mesa distinta de la asignada.
+EXP-000834,SUF-03,suffrage_id,SUF-0001508,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000835,SUF-03,suffrage_id,SUF-0000435,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000836,SUF-03,suffrage_id,SUF-0001802,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000837,SUF-03,suffrage_id,SUF-0002509,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000838,SUF-03,suffrage_id,SUF-0001599,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000839,SUF-03,suffrage_id,SUF-0001655,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000840,SUF-03,suffrage_id,SUF-0001503,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000841,SUF-03,suffrage_id,SUF-0001869,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000842,SUF-03,suffrage_id,SUF-0000389,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000843,SUF-03,suffrage_id,SUF-0003118,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000844,SUF-03,suffrage_id,SUF-0003059,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000845,SUF-03,suffrage_id,SUF-0002476,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000846,SUF-03,suffrage_id,SUF-0000857,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000847,SUF-03,suffrage_id,SUF-0000616,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000848,SUF-03,suffrage_id,SUF-0001903,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000849,SUF-03,suffrage_id,SUF-0000525,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000850,SUF-03,suffrage_id,SUF-0003387,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000851,SUF-03,suffrage_id,SUF-0001569,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000852,SUF-03,suffrage_id,SUF-0000953,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000853,SUF-03,suffrage_id,SUF-0000751,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000854,SUF-03,suffrage_id,SUF-0001952,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000855,SUF-03,suffrage_id,SUF-0003105,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000856,SUF-03,suffrage_id,SUF-0003060,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000857,SUF-03,suffrage_id,SUF-0001571,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000858,SUF-03,suffrage_id,SUF-0002038,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000859,SUF-03,suffrage_id,SUF-0001946,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000860,SUF-03,suffrage_id,SUF-0000082,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000861,SUF-03,suffrage_id,SUF-0002728,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000862,SUF-03,suffrage_id,SUF-0002278,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000863,SUF-03,suffrage_id,SUF-0001765,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000864,SUF-03,suffrage_id,SUF-0003365,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000865,SUF-03,suffrage_id,SUF-0001786,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000866,SUF-03,suffrage_id,SUF-0001982,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000867,SUF-03,suffrage_id,SUF-0001523,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000868,SUF-03,suffrage_id,SUF-0002289,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000869,SUF-03,suffrage_id,SUF-0000461,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000870,SUF-03,suffrage_id,SUF-0002825,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000871,SUF-03,suffrage_id,SUF-0003166,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000872,SUF-03,suffrage_id,SUF-0000641,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000873,SUF-03,suffrage_id,SUF-0002049,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000874,SUF-03,suffrage_id,SUF-0003111,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000875,SUF-03,suffrage_id,SUF-0002157,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000876,SUF-03,suffrage_id,SUF-0002039,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000877,SUF-03,suffrage_id,SUF-0002481,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000878,SUF-03,suffrage_id,SUF-0002711,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000879,SUF-03,suffrage_id,SUF-0000167,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000880,SUF-03,suffrage_id,SUF-0001841,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000881,SUF-03,suffrage_id,SUF-0000192,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000882,SUF-03,suffrage_id,SUF-0000708,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000883,SUF-03,suffrage_id,SUF-0001993,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000884,SUF-03,suffrage_id,SUF-0001763,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000885,SUF-03,suffrage_id,SUF-0001804,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000886,SUF-03,suffrage_id,SUF-0002546,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000887,SUF-03,suffrage_id,SUF-0001937,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000888,SUF-03,suffrage_id,SUF-0000341,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000889,SUF-03,suffrage_id,SUF-0001760,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000890,SUF-03,suffrage_id,SUF-0001009,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000891,SUF-03,suffrage_id,SUF-0003145,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000892,SUF-03,suffrage_id,SUF-0002435,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000893,SUF-03,suffrage_id,SUF-0000830,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000894,SUF-03,suffrage_id,SUF-0002844,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000895,SUF-03,suffrage_id,SUF-0000586,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000896,SUF-03,suffrage_id,SUF-0002412,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000897,SUF-03,suffrage_id,SUF-0002184,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000898,SUF-03,suffrage_id,SUF-0000622,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000899,SUF-03,suffrage_id,SUF-0003099,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000900,SUF-03,suffrage_id,SUF-0000893,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000901,SUF-03,suffrage_id,SUF-0000249,03_registro_sufragio.csv,alta,Check-in fuera de horario electoral.
+EXP-000902,SUF-04,usuario_id,USR-0010,03_registro_sufragio.csv,alta,Operador con concentración atípica de check-ins.
+EXP-000903,MAN-01,ballot_id,BAL-0001666,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000904,MAN-01,ballot_id,BAL-0001180,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000905,MAN-01,ballot_id,BAL-0000626,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000906,MAN-01,ballot_id,BAL-0003182,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000907,MAN-01,ballot_id,BAL-0001620,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000908,MAN-01,ballot_id,BAL-0000885,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000909,MAN-01,ballot_id,BAL-0001406,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000910,MAN-01,ballot_id,BAL-0001376,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000911,MAN-01,ballot_id,BAL-0002319,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000912,MAN-01,ballot_id,BAL-0003114,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000913,MAN-01,ballot_id,BAL-0001658,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000914,MAN-01,ballot_id,BAL-0001448,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000915,MAN-01,ballot_id,BAL-0000612,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000916,MAN-01,ballot_id,BAL-0000019,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000917,MAN-01,ballot_id,BAL-0003046,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000918,MAN-01,ballot_id,BAL-0002676,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000919,MAN-01,ballot_id,BAL-0001509,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000920,MAN-01,ballot_id,BAL-0001979,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000921,MAN-01,ballot_id,BAL-0002481,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000922,MAN-01,ballot_id,BAL-0000537,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000923,MAN-01,ballot_id,BAL-0002643,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000924,MAN-01,ballot_id,BAL-0000642,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000925,MAN-01,ballot_id,BAL-0000993,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000926,MAN-01,ballot_id,BAL-0000677,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000927,MAN-01,ballot_id,BAL-0000660,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000928,MAN-01,ballot_id,BAL-0000667,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000929,MAN-01,ballot_id,BAL-0000904,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000930,MAN-01,ballot_id,BAL-0002402,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000931,MAN-01,ballot_id,BAL-0002153,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000932,MAN-01,ballot_id,BAL-0001829,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000933,MAN-01,ballot_id,BAL-0001841,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000934,MAN-01,ballot_id,BAL-0003412,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000935,MAN-01,ballot_id,BAL-0002002,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000936,MAN-01,ballot_id,BAL-0003260,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000937,MAN-01,ballot_id,BAL-0001432,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000938,MAN-01,ballot_id,BAL-0002216,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000939,MAN-01,ballot_id,BAL-0001814,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000940,MAN-01,ballot_id,BAL-0002960,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000941,MAN-01,ballot_id,BAL-0000627,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000942,MAN-01,ballot_id,BAL-0003383,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000943,MAN-01,ballot_id,BAL-0000779,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000944,MAN-01,ballot_id,BAL-0002568,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000945,MAN-01,ballot_id,BAL-0000280,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000946,MAN-01,ballot_id,BAL-0000450,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000947,MAN-01,ballot_id,BAL-0001765,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000948,MAN-01,ballot_id,BAL-0000981,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000949,MAN-01,ballot_id,BAL-0003019,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000950,MAN-01,ballot_id,BAL-0002192,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000951,MAN-01,ballot_id,BAL-0003085,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000952,MAN-01,ballot_id,BAL-0001473,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000953,MAN-01,ballot_id,BAL-0003012,04_clasificacion_votos_manual.csv,alta,Voto objetivamente válido declarado inválido.
+EXP-000954,MAN-02,ballot_id,BAL-0000697,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000955,MAN-02,ballot_id,BAL-0002461,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000956,MAN-02,ballot_id,BAL-0000673,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000957,MAN-02,ballot_id,BAL-0000533,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000958,MAN-02,ballot_id,BAL-0002227,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000959,MAN-02,ballot_id,BAL-0001172,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000960,MAN-02,ballot_id,BAL-0003054,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000961,MAN-02,ballot_id,BAL-0001906,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000962,MAN-02,ballot_id,BAL-0001251,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000963,MAN-02,ballot_id,BAL-0000383,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000964,MAN-02,ballot_id,BAL-0002125,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000965,MAN-02,ballot_id,BAL-0003120,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000966,MAN-02,ballot_id,BAL-0000480,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000967,MAN-02,ballot_id,BAL-0002004,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000968,MAN-02,ballot_id,BAL-0002886,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000969,MAN-02,ballot_id,BAL-0003118,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000970,MAN-02,ballot_id,BAL-0001997,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000971,MAN-02,ballot_id,BAL-0003299,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000972,MAN-02,ballot_id,BAL-0000500,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000973,MAN-02,ballot_id,BAL-0001630,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000974,MAN-02,ballot_id,BAL-0001400,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000975,MAN-02,ballot_id,BAL-0001821,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000976,MAN-02,ballot_id,BAL-0000150,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000977,MAN-02,ballot_id,BAL-0001901,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000978,MAN-02,ballot_id,BAL-0002662,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000979,MAN-02,ballot_id,BAL-0000809,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000980,MAN-02,ballot_id,BAL-0000189,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000981,MAN-02,ballot_id,BAL-0003286,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000982,MAN-02,ballot_id,BAL-0000354,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000983,MAN-02,ballot_id,BAL-0001968,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000984,MAN-02,ballot_id,BAL-0002849,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000985,MAN-02,ballot_id,BAL-0002285,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000986,MAN-02,ballot_id,BAL-0000505,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000987,MAN-02,ballot_id,BAL-0003409,04_clasificacion_votos_manual.csv,alta,Voto objetivamente inválido declarado válido.
+EXP-000988,MAN-03,ballot_id,BAL-0002157,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000989,MAN-03,ballot_id,BAL-0001957,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000990,MAN-03,ballot_id,BAL-0000219,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000991,MAN-03,ballot_id,BAL-0001366,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000992,MAN-03,ballot_id,BAL-0002756,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000993,MAN-03,ballot_id,BAL-0002694,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000994,MAN-03,ballot_id,BAL-0000985,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000995,MAN-03,ballot_id,BAL-0000735,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000996,MAN-03,ballot_id,BAL-0000066,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000997,MAN-03,ballot_id,BAL-0001530,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000998,MAN-03,ballot_id,BAL-0000778,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-000999,MAN-03,ballot_id,BAL-0000576,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001000,MAN-03,ballot_id,BAL-0000406,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001001,MAN-03,ballot_id,BAL-0001696,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001002,MAN-03,ballot_id,BAL-0000301,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001003,MAN-03,ballot_id,BAL-0002572,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001004,MAN-03,ballot_id,BAL-0002541,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001005,MAN-03,ballot_id,BAL-0002061,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001006,MAN-03,ballot_id,BAL-0001032,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001007,MAN-03,ballot_id,BAL-0000316,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001008,MAN-03,ballot_id,BAL-0002360,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001009,MAN-03,ballot_id,BAL-0000733,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001010,MAN-03,ballot_id,BAL-0002556,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001011,MAN-03,ballot_id,BAL-0000564,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001012,MAN-03,ballot_id,BAL-0002790,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001013,MAN-03,ballot_id,BAL-0003237,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001014,MAN-03,ballot_id,BAL-0003136,04_clasificacion_votos_manual.csv,media,Voto blanco reclasificado indebidamente.
+EXP-001015,MAN-04,usuario_id,USR-0030,04_clasificacion_votos_manual.csv,alta,Clasificador manual con tasa anómala de invalidación.
+EXP-001016,RES-01,mesa_id,MESA-031,05_resultados_mesa.csv,critica,Sufragantes registrados mayores que electores habilitados.
+EXP-001017,RES-02,mesa_id,MESA-031,05_resultados_mesa.csv,critica,Participación superior al 100%.
+EXP-001018,RES-01,mesa_id,MESA-001,05_resultados_mesa.csv,critica,Sufragantes registrados mayores que electores habilitados.
+EXP-001019,RES-02,mesa_id,MESA-001,05_resultados_mesa.csv,critica,Participación superior al 100%.
+EXP-001020,RES-01,mesa_id,MESA-023,05_resultados_mesa.csv,critica,Sufragantes registrados mayores que electores habilitados.
+EXP-001021,RES-02,mesa_id,MESA-023,05_resultados_mesa.csv,critica,Participación superior al 100%.
+EXP-001022,RES-01,mesa_id,MESA-032,05_resultados_mesa.csv,critica,Sufragantes registrados mayores que electores habilitados.
+EXP-001023,RES-02,mesa_id,MESA-032,05_resultados_mesa.csv,critica,Participación superior al 100%.
+EXP-001024,RES-01,mesa_id,MESA-019,05_resultados_mesa.csv,critica,Sufragantes registrados mayores que electores habilitados.
+EXP-001025,RES-02,mesa_id,MESA-019,05_resultados_mesa.csv,critica,Participación superior al 100%.
+EXP-001026,RES-01,mesa_id,MESA-029,05_resultados_mesa.csv,critica,Sufragantes registrados mayores que electores habilitados.
+EXP-001027,RES-02,mesa_id,MESA-029,05_resultados_mesa.csv,critica,Participación superior al 100%.
+EXP-001028,RES-03,mesa_id,MESA-056,05_resultados_mesa.csv,alta,Total reportado no coincide con total calculado.
+EXP-001029,RES-03,mesa_id,MESA-026,05_resultados_mesa.csv,alta,Total reportado no coincide con total calculado.
+EXP-001030,RES-03,mesa_id,MESA-011,05_resultados_mesa.csv,alta,Total reportado no coincide con total calculado.
+EXP-001031,RES-03,mesa_id,MESA-020,05_resultados_mesa.csv,alta,Total reportado no coincide con total calculado.
+EXP-001032,RES-06,mesa_id,MESA-022,05_resultados_mesa.csv,media,Concentración extrema del ganador.
+EXP-001033,RES-06,mesa_id,MESA-030,05_resultados_mesa.csv,media,Concentración extrema del ganador.
+EXP-001034,RES-06,mesa_id,MESA-001,05_resultados_mesa.csv,media,Concentración extrema del ganador.
+EXP-001035,RES-06,mesa_id,MESA-024,05_resultados_mesa.csv,media,Concentración extrema del ganador.
+EXP-001036,RES-05,mesa_id,MESA-021,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
+EXP-001037,RES-05,mesa_id,MESA-050,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
+EXP-001038,RES-05,mesa_id,MESA-031,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
+EXP-001039,RES-05,mesa_id,MESA-018,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
+EXP-001040,LOG-01,evento_id,EVT-0000947,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001041,LOG-01,evento_id,EVT-0001468,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001042,LOG-01,evento_id,EVT-0000708,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001043,LOG-01,evento_id,EVT-0000289,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001044,LOG-01,evento_id,EVT-0000149,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001045,LOG-01,evento_id,EVT-0000389,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001046,LOG-01,evento_id,EVT-0000083,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001047,LOG-01,evento_id,EVT-0000369,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001048,LOG-01,evento_id,EVT-0001617,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001049,LOG-01,evento_id,EVT-0001182,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001050,LOG-01,evento_id,EVT-0000763,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001051,LOG-01,evento_id,EVT-0001091,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001052,LOG-01,evento_id,EVT-0000395,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001053,LOG-01,evento_id,EVT-0000928,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001054,LOG-01,evento_id,EVT-0001050,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001055,LOG-01,evento_id,EVT-0001539,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001056,LOG-01,evento_id,EVT-0001780,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001057,LOG-01,evento_id,EVT-0001220,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001058,LOG-01,evento_id,EVT-0001204,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001059,LOG-01,evento_id,EVT-0001135,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001060,LOG-02,evento_id,EVT-0001552,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001061,LOG-02,evento_id,EVT-0000470,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001062,LOG-02,evento_id,EVT-0000564,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001063,LOG-02,evento_id,EVT-0000637,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001064,LOG-02,evento_id,EVT-0001232,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001065,LOG-02,evento_id,EVT-0000347,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001066,LOG-02,evento_id,EVT-0000759,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001067,LOG-02,evento_id,EVT-0001726,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001068,LOG-02,evento_id,EVT-0001622,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001069,LOG-02,evento_id,EVT-0000535,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001070,LOG-02,evento_id,EVT-0001013,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001071,LOG-02,evento_id,EVT-0000657,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001072,LOG-02,evento_id,EVT-0001542,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001073,LOG-02,evento_id,EVT-0000767,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001074,LOG-02,evento_id,EVT-0000877,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001075,LOG-02,evento_id,EVT-0000994,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001076,LOG-02,evento_id,EVT-0001334,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001077,LOG-02,evento_id,EVT-0000528,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001078,LOG-02,evento_id,EVT-0000663,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001079,LOG-02,evento_id,EVT-0001075,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001080,LOG-02,evento_id,EVT-0000888,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001081,LOG-02,evento_id,EVT-0001322,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001082,LOG-02,evento_id,EVT-0000591,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001083,LOG-02,evento_id,EVT-0001349,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001084,LOG-02,evento_id,EVT-0001115,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001085,LOG-02,evento_id,EVT-0000412,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001086,LOG-02,evento_id,EVT-0000402,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001087,LOG-02,evento_id,EVT-0001225,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001088,LOG-02,evento_id,EVT-0001181,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001089,LOG-02,evento_id,EVT-0000418,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001090,LOG-02,evento_id,EVT-0001373,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001091,LOG-02,evento_id,EVT-0000342,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001092,LOG-02,evento_id,EVT-0001640,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
+EXP-001093,LOG-03,usuario_id,USR-0026,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001094,LOG-03,usuario_id,USR-0053,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001095,LOG-03,usuario_id,USR-0018,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001096,LOG-03,usuario_id,USR-0060,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001097,LOG-03,usuario_id,USR-0027,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001098,LOG-03,usuario_id,USR-0045,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001099,LOG-03,usuario_id,USR-0041,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001100,LOG-03,usuario_id,USR-0057,06_logs_eventos.csv,alta,Usuario no activo ejecuta acción en el sistema.
+EXP-001101,LOG-04,usuario_id,USR-0041,06_logs_eventos.csv,media,Múltiples intentos fallidos de acceso.
+EXP-001102,LOG-05,evento_id,EVT-0001194,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001103,LOG-05,evento_id,EVT-0001253,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001104,LOG-05,evento_id,EVT-0001626,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001105,LOG-05,evento_id,EVT-0001235,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001106,LOG-05,evento_id,EVT-0000256,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001107,LOG-05,evento_id,EVT-0000176,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001108,LOG-05,evento_id,EVT-0001277,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001109,LOG-05,evento_id,EVT-0001145,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001110,LOG-05,evento_id,EVT-0000315,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001111,LOG-05,evento_id,EVT-0000106,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001112,LOG-05,evento_id,EVT-0001540,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001113,LOG-05,evento_id,EVT-0001786,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001114,LOG-05,evento_id,EVT-0001597,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001115,LOG-05,evento_id,EVT-0000913,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001116,LOG-05,evento_id,EVT-0001332,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001117,LOG-05,evento_id,EVT-0001209,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001118,LOG-05,evento_id,EVT-0000709,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001119,LOG-05,evento_id,EVT-0001207,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001120,LOG-05,evento_id,EVT-0001743,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001121,LOG-05,evento_id,EVT-0000416,06_logs_eventos.csv,critica,Hash modificado en evento no autorizado.
+EXP-001122,LOG-06,evento_id,EVT-0001206,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001123,LOG-06,evento_id,EVT-0000453,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001124,LOG-06,evento_id,EVT-0000378,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001125,LOG-06,evento_id,EVT-0001473,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001126,LOG-06,evento_id,EVT-0001269,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001127,LOG-06,evento_id,EVT-0001052,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001128,LOG-06,evento_id,EVT-0000465,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001129,LOG-06,evento_id,EVT-0001519,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001130,LOG-06,evento_id,EVT-0001504,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001131,LOG-06,evento_id,EVT-0000439,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001132,LOG-06,evento_id,EVT-0001095,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001133,LOG-06,evento_id,EVT-0000616,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001134,LOG-06,evento_id,EVT-0000343,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001135,LOG-06,evento_id,EVT-0000967,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001136,LOG-06,evento_id,EVT-0001076,06_logs_eventos.csv,critica,Usuario aprueba su propio cambio.
+EXP-001137,INT-01,archivo_id,ARC-000073,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001138,INT-01,archivo_id,ARC-000037,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001139,INT-01,archivo_id,ARC-000025,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001140,INT-01,archivo_id,ARC-000094,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001141,INT-01,archivo_id,ARC-000068,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001142,INT-01,archivo_id,ARC-000004,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001143,INT-01,archivo_id,ARC-000044,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001144,INT-01,archivo_id,ARC-000097,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001145,INT-01,archivo_id,ARC-000154,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001146,INT-01,archivo_id,ARC-000113,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001147,INT-01,archivo_id,ARC-000034,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001148,INT-01,archivo_id,ARC-000069,07_integridad_archivos.csv,critica,Hash actual distinto al hash original.
+EXP-001149,INT-02,archivo_id,ARC-000068,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001150,INT-02,archivo_id,ARC-000007,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001151,INT-02,archivo_id,ARC-000121,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001152,INT-02,archivo_id,ARC-000111,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001153,INT-02,archivo_id,ARC-000036,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001154,INT-02,archivo_id,ARC-000074,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001155,INT-02,archivo_id,ARC-000041,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001156,INT-02,archivo_id,ARC-000051,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001157,INT-02,archivo_id,ARC-000001,07_integridad_archivos.csv,critica,Total publicado diferente al total firmado.
+EXP-001158,INT-03,archivo_id,ARC-000055,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001159,INT-03,archivo_id,ARC-000053,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001160,INT-03,archivo_id,ARC-000105,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001161,INT-03,archivo_id,ARC-000003,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001162,INT-03,archivo_id,ARC-000132,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001163,INT-03,archivo_id,ARC-000139,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001164,INT-03,archivo_id,ARC-000116,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001165,INT-03,archivo_id,ARC-000075,07_integridad_archivos.csv,alta,Archivo publicado antes de la firma.
+EXP-001166,INT-04,archivo_id,ARC-000068,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001167,INT-04,archivo_id,ARC-000118,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001168,INT-04,archivo_id,ARC-000125,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001169,INT-04,archivo_id,ARC-000033,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001170,INT-04,archivo_id,ARC-000153,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001171,INT-04,archivo_id,ARC-000040,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001172,INT-04,archivo_id,ARC-000093,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
+EXP-001173,INT-04,archivo_id,ARC-000049,07_integridad_archivos.csv,alta,Archivo alterado después del cierre electoral.
