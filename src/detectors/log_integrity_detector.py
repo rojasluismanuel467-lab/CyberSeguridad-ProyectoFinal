@@ -6,6 +6,11 @@ from datetime import datetime
 
 import pandas as pd
 
+from src.analytics.statistics import (
+    detect_outliers,
+    feature_eventos_por_usuario,
+    feature_modificaciones_por_mesa,
+)
 from src.config.rules_config import ELECTION_CLOSE_TIME, ELECTION_DATE
 from src.detectors.base import build_alert_row, to_alert_dataframe
 
@@ -123,6 +128,44 @@ class LogIntegrityDetector:
                 )
             )
             idx += 1
+
+        # Feature engineering + Z-score: eventos_por_usuario
+        events_per_user = feature_eventos_por_usuario(logs)
+        if not events_per_user.empty:
+            user_outliers = detect_outliers(events_per_user["eventos_por_usuario"])
+            for _, record in events_per_user[user_outliers].iterrows():
+                rows.append(
+                    build_alert_row(
+                        "LOG-04",
+                        "usuario_id",
+                        record["usuario_id"],
+                        "06_logs_eventos.csv",
+                        f"eventos_por_usuario={record['eventos_por_usuario']}",
+                        descripcion="Volumen de eventos por usuario estadísticamente atípico (Z-score).",
+                        accion_recomendada="Revisar actividad del usuario y correlacionar con trazas de auditoría.",
+                        alert_index=idx,
+                    )
+                )
+                idx += 1
+
+        # Feature engineering + Z-score: modificaciones_por_mesa
+        modifications_per_table = feature_modificaciones_por_mesa(logs)
+        if not modifications_per_table.empty:
+            table_outliers = detect_outliers(modifications_per_table["modificaciones_por_mesa"])
+            for _, record in modifications_per_table[table_outliers].iterrows():
+                rows.append(
+                    build_alert_row(
+                        "LOG-01",
+                        "mesa_id",
+                        record["mesa_id"],
+                        "06_logs_eventos.csv",
+                        f"modificaciones_por_mesa={record['modificaciones_por_mesa']}",
+                        descripcion="Cantidad de modificaciones por mesa estadísticamente atípica (Z-score).",
+                        accion_recomendada="Auditar modificaciones por mesa y validar autorizaciones vinculadas.",
+                        alert_index=idx,
+                    )
+                )
+                idx += 1
 
         log05 = logs[
             (logs["hash_antes"].astype(str) != logs["hash_despues"].astype(str))

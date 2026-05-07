@@ -94,7 +94,8 @@ class ResultsDetector:
             idx += 1
 
         concentration_outliers = detect_outliers(results["concentracion_ganador_pct"].fillna(0))
-        extreme_mask = concentration_outliers | (results["concentracion_ganador_pct"] >= 0.9)
+        margin_outliers = detect_outliers(results["margen_victoria_pct"].fillna(0))
+        extreme_mask = concentration_outliers | margin_outliers | (results["concentracion_ganador_pct"] >= 0.9)
         for _, record in results[extreme_mask].iterrows():
             rows.append(
                 build_alert_row(
@@ -102,7 +103,9 @@ class ResultsDetector:
                     "mesa_id",
                     record["mesa_id"],
                     "05_resultados_mesa.csv",
-                    f"concentracion_ganador_pct={record['concentracion_ganador_pct']}",
+                    (
+                        "concentracion_ganador_pct={} ; margen_victoria_pct={}"
+                    ).format(record["concentracion_ganador_pct"], record["margen_victoria_pct"]),
                     alert_index=idx,
                 )
             )

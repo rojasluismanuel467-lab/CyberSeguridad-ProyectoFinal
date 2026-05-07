@@ -41,6 +41,9 @@ Métricas:
 - No es sistema productivo.
 - Resultados deben interpretarse como señales de revisión.
 
+## Advertencia ética obligatoria
+Este sistema utiliza datos sintéticos generados con fines académicos. Las alertas no constituyen prueba de fraude electoral. Los resultados deben interpretarse como señales de revisión que requieren validación documental, técnica y contextual.
+
 ## Referencias técnicas
 1. NIST CDF: https://nvlpubs.nist.gov/nistpubs/gcr/2024/24-058/NIST.GCR.24-058.html
 2. NIST VRI: https://pages.nist.gov/VoterRecordsInterchange/

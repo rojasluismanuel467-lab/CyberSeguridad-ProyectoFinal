@@ -11,12 +11,7 @@ import streamlit as st
 from src.config.rules_config import ETHICAL_WARNING
 from src.data_loader.csv_loader import DatasetLoadError, load_datasets
 from src.data_loader.validators import validate_datasets
-from src.detectors.circumscription_detector import CircumscriptionDetector
-from src.detectors.eligibility_detector import EligibilityDetector
-from src.detectors.log_integrity_detector import LogIntegrityDetector
-from src.detectors.manual_count_detector import ManualCountDetector
-from src.detectors.results_detector import ResultsDetector
-from src.detectors.suffrage_detector import SuffrageDetector
+from src.detectors.factory import build_default_detectors
 from src.pipeline.analysis_pipeline import AnalysisPipeline
 from src.reports.report_generator import export_reports
 from src.visualizations.charts import build_required_charts
@@ -114,14 +109,7 @@ def run_generation_script() -> tuple[bool, str]:
 
 
 def run_analysis(datasets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
-    detectors = [
-        EligibilityDetector(),
-        CircumscriptionDetector(),
-        SuffrageDetector(),
-        ManualCountDetector(),
-        ResultsDetector(),
-        LogIntegrityDetector(),
-    ]
+    detectors = build_default_detectors()
     pipeline = AnalysisPipeline(detectors)
     return pipeline.run(datasets)
 
