@@ -103,6 +103,8 @@ def init_state() -> None:
         "export_paths": None,
         "is_busy": False,
         "gen_action": None,
+        "load_trigger": False,
+        "gen_message": None,
     }
     for key, value in defaults.items():
         if key not in st.session_state:
@@ -155,14 +157,14 @@ def safe_load_and_validate() -> None:
         st.session_state.validation = validation
 
         if validation["errors"]:
-            st.warning("Errores de validación encontrados. Revise el detalle en esta sección.")
+            st.session_state.gen_message = ("warning", "Errores de validación encontrados. Revise el detalle.")
         else:
-            st.success("Datasets cargados y validados correctamente.")
+            st.session_state.gen_message = ("success", "Datasets cargados y validados correctamente.")
 
     except DatasetLoadError as exc:
-        st.warning(str(exc))
+        st.session_state.gen_message = ("warning", str(exc))
     except Exception:
-        st.warning("Ocurrió un problema al cargar o validar datasets.")
+        st.session_state.gen_message = ("error", "Ocurrió un problema al cargar o validar datasets.")
 
 
 def render_ethical_warning() -> None:
@@ -320,18 +322,50 @@ def render_data_management() -> None:
         st.info("Estado: datasets existentes detectados")
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("Cargar datasets", type="primary", disabled=st.session_state.is_generating):
-                safe_load_and_validate()
+            if st.session_state.datasets is None:
+                if st.button("Cargar datasets", type="primary", disabled=st.session_state.is_busy):
+                    st.session_state.is_busy = True
+                    st.session_state.load_trigger = True
+                    st.rerun()
+            else:
+                if st.button("Ejecutar análisis completo", type="primary", disabled=st.session_state.is_busy):
+                    validation = st.session_state.validation or {"errors": []}
+                    if validation["errors"]:
+                        st.warning("Corrija primero los errores de validación.")
+                    else:
+                        try:
+                            st.session_state.is_busy = True
+                            with st.spinner("Ejecutando análisis..."):
+                                analysis = run_analysis(st.session_state.datasets)
+                                st.session_state.analysis = analysis
+                                export_paths = export_reports(
+                                    analysis["alerts"], analysis["ranking"], analysis["summary"]
+                                )
+                                st.session_state.export_paths = export_paths
+                            st.success("Análisis ejecutado y reportes exportados correctamente.")
+                        except Exception:
+                            st.warning("No fue posible ejecutar el análisis completo.")
+                        finally:
+                            st.session_state.is_busy = False
         with col2:
-            if st.button("Regenerar datasets", disabled=st.session_state.is_generating):
-                st.session_state.is_generating = True
+            if st.button("Regenerar datasets", disabled=st.session_state.is_busy):
+                st.session_state.is_busy = True
                 st.session_state.gen_action = "regenerar"
+                st.session_state.gen_message = None
                 st.rerun()
     else:
-        if st.button("Generar datasets sintéticos", type="primary", disabled=st.session_state.is_generating):
-            st.session_state.is_generating = True
+        if st.button("Generar datasets sintéticos", type="primary", disabled=st.session_state.is_busy):
+            st.session_state.is_busy = True
             st.session_state.gen_action = "generar"
+            st.session_state.gen_message = None
             st.rerun()
+
+    # Display persistent messages below buttons
+    if st.session_state.gen_message:
+        msg_type, msg_text = st.session_state.gen_message
+        if msg_type == "success": st.success(msg_text)
+        elif msg_type == "warning": st.warning(msg_text)
+        elif msg_type == "error": st.error(msg_text)
 
     # Placeholders for full-width progress reporting - moved BELOW buttons
     label_placeholder = st.empty()
@@ -383,44 +417,63 @@ def render_data_management() -> None:
         st.session_state.gen_action = None
         
         if success:
-            st.success("Datasets generados correctamente.")
+            st.session_state.gen_message = ("success", "Datasets generados correctamente.")
             safe_load_and_validate()
             st.rerun()
         else:
-            st.error(f"Error: {message}")
+            st.session_state.gen_message = ("error", f"Error: {message}")
             st.rerun()
 
-    st.dataframe(dataset_status_table(), width="stretch")
+    # Handle the load process if triggered
+    if st.session_state.load_trigger:
+        with st.spinner("Cargando y validando datasets..."):
+            safe_load_and_validate()
+        st.session_state.is_busy = False
+        st.session_state.load_trigger = False
+        st.rerun()
+
+    st.markdown("### Estado de datasets")
+    if datasets_exist:
+        st.caption("💡 Haz clic en una fila para ver una vista previa del dataset.")
+    
+    df_status = dataset_status_table()
+    selection = st.dataframe(
+        df_status,
+        use_container_width=True,
+        hide_index=True,
+        on_select="rerun" if datasets_exist else "ignore",
+        selection_mode="single-row" if datasets_exist else None,
+    )
+
+    # Show preview based on selection (Disk or Session)
+    if selection.selection.rows:
+        selected_idx = selection.selection.rows[0]
+        preview_name = df_status.iloc[selected_idx]["dataset"]
+        
+        # Priority 1: Session Data
+        if st.session_state.datasets and preview_name in st.session_state.datasets:
+            st.markdown(f"#### Vista previa: `{preview_name}` (en sesión)")
+            st.dataframe(st.session_state.datasets[preview_name].head(20), use_container_width=True)
+        else:
+            # Priority 2: Disk Data
+            file_path = Path("data/synthetic") / preview_name
+            if file_path.exists():
+                st.markdown(f"#### Vista previa: `{preview_name}` (vista previa desde archivo)")
+                try:
+                    df_disk = pd.read_csv(file_path, nrows=20)
+                    st.dataframe(df_disk, use_container_width=True)
+                except Exception as e:
+                    st.error(f"No se pudo leer el archivo: {e}")
+            else:
+                st.info(f"El dataset `{preview_name}` no existe todavía.")
 
     if st.session_state.datasets:
-        st.success("Datasets disponibles en sesión.")
-
-        preview_name = st.selectbox("Vista previa de dataset", list(st.session_state.datasets.keys()))
-        st.dataframe(st.session_state.datasets[preview_name].head(20), width="stretch")
-
         validation = st.session_state.validation or {"errors": []}
         if validation["errors"]:
             st.warning("Errores de validación:")
             for err in validation["errors"]:
                 st.write(f"- {err}")
-        else:
-            st.success("Validación exitosa.")
 
-        if st.button("Ejecutar análisis completo", type="primary"):
-            if validation["errors"]:
-                st.warning("Corrija primero los errores de validación.")
-            else:
-                try:
-                    with st.spinner("Ejecutando análisis..."):
-                        analysis = run_analysis(st.session_state.datasets)
-                        st.session_state.analysis = analysis
-                        export_paths = export_reports(
-                            analysis["alerts"], analysis["ranking"], analysis["summary"]
-                        )
-                        st.session_state.export_paths = export_paths
-                    st.success("Análisis ejecutado y reportes exportados correctamente.")
-                except Exception:
-                    st.warning("No fue posible ejecutar el análisis completo.")
 
 
 def render_results_stage() -> None:
