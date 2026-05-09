@@ -21,13 +21,7 @@ st.set_page_config(page_title="Electoral Integrity Analyzer", layout="wide")
 MENU_OPTIONS = [
     "Inicio",
     "Preparar análisis",
-    "Padrón y elegibilidad",
-    "Circunscripción y mesa",
-    "Registro de sufragio",
-    "Escrutinio manual",
-    "Resultados por mesa",
-    "Logs e integridad",
-    "Reporte consolidado",
+    "Resultados",
 ]
 
 STAGE_CONFIG: dict[str, dict] = {
@@ -319,11 +313,11 @@ def render_home() -> None:
     st.divider()
     
     if st.session_state.is_busy:
-        st.info("⏳ El sistema está procesando datos en este momento...")
+        st.info("El sistema está procesando datos en este momento...")
     else:
         col1, col2 = st.columns([1, 2])
         with col1:
-            if st.button("🚀 Comenzar análisis", type="primary", use_container_width=True):
+            if st.button("Comenzar análisis", type="primary", use_container_width=True):
                 st.session_state.current_page = "Preparar análisis"
                 st.rerun()
 
@@ -365,6 +359,8 @@ def render_data_management() -> None:
                             )
                             st.session_state.export_paths = export_paths
                             st.session_state.gen_message = ("success", "Análisis completado y reportes generados.")
+                            # AUTO-NAVIGATE to Results
+                            st.session_state.current_page = "Resultados"
                 except Exception as e:
                     st.session_state.gen_message = ("error", f"Error durante el proceso: {str(e)}")
                 finally:
@@ -386,9 +382,11 @@ def render_data_management() -> None:
         elif msg_type == "warning": st.warning(msg_text)
         elif msg_type == "error": st.error(msg_text)
 
-    # Placeholders for full-width progress reporting - moved BELOW buttons
+    # Placeholders for full-width progress reporting
     label_placeholder = st.empty()
     progress_placeholder = st.empty()
+
+    # ... (Rest of generation handling remains same)
 
     # Handle the generation process if triggered
     if st.session_state.is_busy and st.session_state.gen_action:
@@ -451,9 +449,14 @@ def render_data_management() -> None:
         st.session_state.load_trigger = False
         st.rerun()
 
+    if st.session_state.analysis:
+        render_analysis_success_summary()
+
     st.markdown("### Estado de datasets")
+    st.info("En este paso puedes explorar y previsualizar los datos antes de ejecutar el análisis. También puedes regenerar el dataset para obtener resultados diferentes.")
+    
     if datasets_exist:
-        st.caption("💡 Haz clic en una fila para ver una vista previa del dataset.")
+        st.caption("Haz clic en una fila para ver una vista previa del dataset.")
     
     df_status = dataset_status_table()
     selection = st.dataframe(
@@ -495,7 +498,135 @@ def render_data_management() -> None:
 
 
 
-def render_results_stage() -> None:
+def render_analysis_success_summary() -> None:
+    analysis = st.session_state.analysis
+    if not analysis: return
+
+    alerts = analysis["alerts"]
+    critical_count = int((alerts["severidad"] == "critica").sum()) if not alerts.empty else 0
+    total_reports = len(st.session_state.export_paths) if st.session_state.export_paths else 0
+
+    st.divider()
+    st.markdown("### Resultados del análisis")
+    
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.success(f"Se generaron {total_reports} reportes correctamente.")
+    with col_b:
+        if critical_count == 0:
+            st.success("No se detectaron inconsistencias críticas.")
+        else:
+            st.warning(f"Se detectaron {critical_count} inconsistencias críticas.")
+
+    # Cards layout
+    st.markdown("""
+        <style>
+        .report-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #ffffff;
+            margin-bottom: 10px;
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1E88E5;
+        }
+        .card-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # 7 Cards for all stages
+    stages = [
+        ("Reporte consolidado", "Resumen general y métricas globales.", 0),
+        ("Padrón y elegibilidad", "Validación de votantes y habilitación.", 1),
+        ("Circunscripción y mesa", "Distribución geográfica y asignación.", 2),
+        ("Registro de sufragio", "Control de duplicidad y huella digital.", 3),
+        ("Escrutinio manual", "Validación de actas y conteo físico.", 4),
+        ("Resultados por mesa", "Detalle electoral y participación.", 5),
+        ("Logs e integridad", "Auditoría de eventos y firmas digitales.", 6),
+    ]
+
+    for i in range(0, len(stages), 3):
+        cols = st.columns(3)
+        for j in range(3):
+            if i + j < len(stages):
+                title, desc, tab_idx = stages[i+j]
+                with cols[j]:
+                    st.markdown(f'<div class="report-card"><div class="card-title">{title}</div><div class="card-desc">{desc}</div></div>', unsafe_allow_html=True)
+                    if st.button("Ver", key=f"btn_stg_{i+j}", use_container_width=True):
+                        st.session_state.current_page = "Resultados"
+                        st.rerun()
+
+    st.divider()
+
+
+def render_results_hub() -> None:
+    st.title("Resultados del análisis")
+    if not st.session_state.get("analysis"):
+        st.info("Para ver los resultados, primero debes ejecutar el análisis de los datos.")
+        col1, col2 = st.columns([1, 1])
+        with col1:
+            if st.button("Comenzar análisis", type="primary", use_container_width=True):
+                st.session_state.current_page = "Preparar análisis"
+                st.rerun()
+        with col2:
+            if st.button("¿Cómo funciona?", use_container_width=True):
+                st.session_state.current_page = "Inicio"
+                st.rerun()
+        return
+
+    tab_titles = [
+        "Reporte consolidado",
+        "Padrón y elegibilidad",
+        "Circunscripción y mesa",
+        "Registro de sufragio",
+        "Escrutinio manual",
+        "Resultados por mesa",
+        "Logs e integridad",
+    ]
+    tabs = st.tabs(tab_titles)
+
+    with tabs[0]:
+        render_consolidated_report()
+    with tabs[1]:
+        render_stage_alerts("Padrón y elegibilidad")
+    with tabs[2]:
+        render_stage_alerts("Circunscripción y mesa")
+    with tabs[3]:
+        render_stage_alerts("Registro de sufragio")
+    with tabs[4]:
+        render_stage_alerts("Escrutinio manual")
+    with tabs[5]:
+        render_results_stage(key_suffix="hub")
+    with tabs[6]:
+        render_stage_alerts("Logs e integridad")
+
+
+def render_results_stage(key_suffix: str = "") -> None:
+    render_stage_alerts("Resultados por mesa")
+
+    analysis = st.session_state.analysis
+    if not analysis:
+        return
+
+    datasets = st.session_state.datasets
+    results = datasets.get("05_resultados_mesa.csv", pd.DataFrame()) if datasets else pd.DataFrame()
+    charts = build_required_charts(analysis["alerts"], results, analysis["ranking"])
+
+    with st.expander("Visualizaciones de esta etapa", expanded=True):
+        st.plotly_chart(charts["histograma_participacion"], use_container_width=True, key=f"hist_part_{key_suffix}")
+        st.caption("Permite identificar mesas con participación inusualmente alta o baja.")
+        st.plotly_chart(charts["boxplot_nulos_invalidos"], use_container_width=True, key=f"box_nulos_{key_suffix}")
+        st.caption("Resalta mesas con tasas atípicas de nulos/inválidos.")
     render_stage_alerts("Resultados por mesa")
 
     analysis = st.session_state.analysis
@@ -514,13 +645,10 @@ def render_results_stage() -> None:
 
 
 def render_consolidated_report() -> None:
-    st.title("Reporte consolidado")
     render_ethical_warning()
 
-    if not _require_analysis():
-        return
-
     analysis = st.session_state.analysis
+    if not analysis: return
     datasets = st.session_state.datasets
     alerts = analysis["alerts"].copy()
     ranking = analysis["ranking"].copy()
@@ -531,8 +659,8 @@ def render_consolidated_report() -> None:
     )
 
     with tab_summary:
-        st.dataframe(summary, width="stretch")
         render_metrics()
+        st.dataframe(summary, width="stretch")
 
     with tab_table:
         filtered = _filter_alerts(alerts)
@@ -558,19 +686,19 @@ def render_consolidated_report() -> None:
         results = datasets.get("05_resultados_mesa.csv", pd.DataFrame()) if datasets else pd.DataFrame()
         charts = build_required_charts(alerts, results, ranking)
 
-        st.plotly_chart(charts["alertas_por_etapa"], width="stretch")
+        st.plotly_chart(charts["alertas_por_etapa"], width="stretch", key="cons_alert_etapa")
         st.caption("Muestra en qué etapas se concentra el riesgo detectado.")
 
-        st.plotly_chart(charts["alertas_por_severidad"], width="stretch")
+        st.plotly_chart(charts["alertas_por_severidad"], width="stretch", key="cons_alert_sev")
         st.caption("Permite priorizar revisión por criticidad.")
 
-        st.plotly_chart(charts["histograma_participacion"], width="stretch")
+        st.plotly_chart(charts["histograma_participacion"], width="stretch", key="cons_hist_part")
         st.caption("Identifica mesas con participación atípica.")
 
-        st.plotly_chart(charts["boxplot_nulos_invalidos"], width="stretch")
+        st.plotly_chart(charts["boxplot_nulos_invalidos"], width="stretch", key="cons_box_nulos")
         st.caption("Señala dispersión de nulos e inválidos entre mesas.")
 
-        st.plotly_chart(charts["ranking_riesgo_mesas"], width="stretch")
+        st.plotly_chart(charts["ranking_riesgo_mesas"], width="stretch", key="cons_rank_risk")
         st.caption("Prioriza las 10 mesas con mayor score de riesgo.")
 
     with tab_method:
@@ -586,11 +714,16 @@ def render_consolidated_report() -> None:
 
 
 def _nav_label(name: str) -> str:
-    """Decorates sidebar labels with a checkmark once analysis results are available."""
-    if name in ("Inicio", "Cargar / generar datasets"):
-        return name
-    if st.session_state.get("analysis"):
-        return f"✓ {name}"
+    """Decorates sidebar labels."""
+    if name == "Inicio": return "Inicio"
+    if name == "Preparar análisis": return "Preparar análisis"
+    
+    # Lock/Unlock Resultados
+    if name == "Resultados":
+        if st.session_state.get("analysis"):
+            return "Resultados"
+        return "Resultados (bloqueado)"
+    
     return name
 
 
@@ -603,13 +736,7 @@ def main() -> None:
     pages = {
         "Inicio": render_home,
         "Preparar análisis": render_data_management,
-        "Padrón y elegibilidad": lambda: render_stage_alerts("Padrón y elegibilidad"),
-        "Circunscripción y mesa": lambda: render_stage_alerts("Circunscripción y mesa"),
-        "Registro de sufragio": lambda: render_stage_alerts("Registro de sufragio"),
-        "Escrutinio manual": lambda: render_stage_alerts("Escrutinio manual"),
-        "Resultados por mesa": render_results_stage,
-        "Logs e integridad": lambda: render_stage_alerts("Logs e integridad"),
-        "Reporte consolidado": render_consolidated_report,
+        "Resultados": render_results_hub,
     }
 
     st.sidebar.title("Navegación")
