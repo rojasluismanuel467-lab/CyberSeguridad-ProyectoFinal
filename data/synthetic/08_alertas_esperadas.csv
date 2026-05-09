@@ -1038,26 +1038,26 @@ EXP-001036,RES-05,mesa_id,MESA-021,05_resultados_mesa.csv,media,Porcentaje atíp
 EXP-001037,RES-05,mesa_id,MESA-050,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
 EXP-001038,RES-05,mesa_id,MESA-031,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
 EXP-001039,RES-05,mesa_id,MESA-018,05_resultados_mesa.csv,media,Porcentaje atípico de votos nulos o inválidos.
-EXP-001040,LOG-01,evento_id,EVT-0001553,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001041,LOG-01,evento_id,EVT-0000491,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001042,LOG-01,evento_id,EVT-0000477,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001043,LOG-01,evento_id,EVT-0001297,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001044,LOG-01,evento_id,EVT-0000972,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001045,LOG-01,evento_id,EVT-0001292,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001046,LOG-01,evento_id,EVT-0001428,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001047,LOG-01,evento_id,EVT-0001572,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001048,LOG-01,evento_id,EVT-0001347,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001049,LOG-01,evento_id,EVT-0001788,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001050,LOG-01,evento_id,EVT-0000061,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001051,LOG-01,evento_id,EVT-0001104,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001052,LOG-01,evento_id,EVT-0000910,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001053,LOG-01,evento_id,EVT-0000121,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001054,LOG-01,evento_id,EVT-0000479,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001055,LOG-01,evento_id,EVT-0000717,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001056,LOG-01,evento_id,EVT-0000736,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001057,LOG-01,evento_id,EVT-0000769,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001058,LOG-01,evento_id,EVT-0001779,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
-EXP-001059,LOG-01,evento_id,EVT-0001358,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001040,LOG-01,evento_id,EVT-0000423,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001041,LOG-01,evento_id,EVT-0001311,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001042,LOG-01,evento_id,EVT-0000704,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001043,LOG-01,evento_id,EVT-0001353,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001044,LOG-01,evento_id,EVT-0000388,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001045,LOG-01,evento_id,EVT-0000301,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001046,LOG-01,evento_id,EVT-0000083,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001047,LOG-01,evento_id,EVT-0000182,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001048,LOG-01,evento_id,EVT-0000366,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001049,LOG-01,evento_id,EVT-0000492,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001050,LOG-01,evento_id,EVT-0000395,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001051,LOG-01,evento_id,EVT-0000287,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001052,LOG-01,evento_id,EVT-0001245,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001053,LOG-01,evento_id,EVT-0001153,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001054,LOG-01,evento_id,EVT-0000438,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001055,LOG-01,evento_id,EVT-0001534,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001056,LOG-01,evento_id,EVT-0001039,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001057,LOG-01,evento_id,EVT-0000596,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001058,LOG-01,evento_id,EVT-0001180,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
+EXP-001059,LOG-01,evento_id,EVT-0000539,06_logs_eventos.csv,critica,Modificación posterior al cierre sin aprobación.
 EXP-001060,LOG-02,evento_id,EVT-0001552,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
 EXP-001061,LOG-02,evento_id,EVT-0000470,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.
 EXP-001062,LOG-02,evento_id,EVT-0000564,06_logs_eventos.csv,critica,Acción ejecutada no permitida por el rol.

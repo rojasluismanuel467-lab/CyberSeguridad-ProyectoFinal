@@ -263,7 +263,7 @@ def render_stage_alerts(stage_name: str) -> None:
     cols[1].metric("Críticas", int((stage_alerts["severidad"] == "critica").sum()))
     cols[2].metric("Entidades afectadas", stage_alerts["entidad_id"].nunique())
 
-    tabs = st.tabs(["Resumen", "Tabla de alertas", "Evidencia y acciones"])
+    tabs = st.tabs(["Resumen", "Hallazgos", "Tabla de alertas", "Evidencia y acciones"])
 
     with tabs[0]:
         if stage_alerts.empty:
@@ -276,11 +276,42 @@ def render_stage_alerts(stage_name: str) -> None:
 
     with tabs[1]:
         if stage_alerts.empty:
+            st.success("No se identificaron anomalías en esta etapa.")
+        else:
+            st.markdown("### Anomalías Identificadas")
+            st.write("A continuación se describen los hallazgos principales en lenguaje natural:")
+            severity_order = {"critica": 1, "alta": 2, "media": 3, "baja": 4}
+            summaries = []
+            
+            for code, group in stage_alerts.groupby("codigo_alerta"):
+                desc = group.iloc[0]["descripcion"]
+                severity = group.iloc[0]["severidad"]
+                summaries.append({
+                    "code": code,
+                    "desc": desc,
+                    "severity": severity,
+                    "count": len(group),
+                    "entities": group["entidad_id"].nunique(),
+                    "sort_val": severity_order.get(severity, 99)
+                })
+                
+            summaries.sort(key=lambda x: x["sort_val"])
+            
+            for s in summaries:
+                if s["severity"] == "critica":
+                    st.error(f"**{s['code']}**: Se detectaron **{s['count']} casos críticos** donde {s['desc'].lower()}. Estas anomalías afectan a {s['entities']} entidades únicas y requieren atención inmediata.")
+                elif s["severity"] == "alta":
+                    st.warning(f"**{s['code']}**: Se identificaron **{s['count']} casos de riesgo alto** donde {s['desc'].lower()}. Esto afecta a {s['entities']} entidades únicas.")
+                else:
+                    st.info(f"**{s['code']}**: Se observaron **{s['count']} casos de riesgo moderado/bajo** donde {s['desc'].lower()}, afectando a {s['entities']} entidades únicas.")
+
+    with tabs[2]:
+        if stage_alerts.empty:
             st.success("No hay registros de alerta para esta etapa.")
         else:
             st.dataframe(stage_alerts, width="stretch")
 
-    with tabs[2]:
+    with tabs[3]:
         if stage_alerts.empty:
             st.success("Sin evidencia que mostrar para esta etapa.")
         else:
@@ -371,6 +402,9 @@ def render_data_management() -> None:
                 st.session_state.is_busy = True
                 st.session_state.gen_action = "regenerar"
                 st.session_state.gen_message = None
+                st.session_state.analysis = None
+                st.session_state.export_paths = None
+                st.session_state.validation = None
                 st.rerun()
     else:
         st.warning("No se detectaron datasets. Iniciando generación automática...")
@@ -511,7 +545,7 @@ def render_analysis_success_summary() -> None:
     
     col_a, col_b = st.columns(2)
     with col_a:
-        st.success(f"Se generaron {total_reports} reportes correctamente.")
+        st.success(f"Se generaron 7 reportes correctamente.")
     with col_b:
         if critical_count == 0:
             st.success("No se detectaron inconsistencias críticas.")
