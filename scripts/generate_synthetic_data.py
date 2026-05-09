@@ -251,6 +251,7 @@ def create_voters(tables: pd.DataFrame) -> pd.DataFrame:
             "mesa_asignada": assigned_tables["mesa_id"].values,
         }
     )
+    print("[PROGRESS] 15", flush=True)
     return voters
 
 
@@ -281,6 +282,7 @@ def inject_padron_anomalies(voters: pd.DataFrame, expected_alerts: list[dict[str
             "01_padron_votantes.csv",
             "Persona fallecida marcada como activa en padrón.",
         )
+    print("[PROGRESS] 23", flush=True)
 
     minors_idx = sample_distinct(all_indices, int(NUM_VOTERS * 0.015), used_indices)
     for idx in minors_idx:
@@ -323,6 +325,7 @@ def inject_padron_anomalies(voters: pd.DataFrame, expected_alerts: list[dict[str
             "01_padron_votantes.csv",
             "Documento cancelado marcado como habilitado.",
         )
+    print("[PROGRESS] 28", flush=True)
 
     ineligible_idx = sample_distinct(all_indices, int(NUM_VOTERS * 0.01), used_indices)
     for idx in ineligible_idx:
@@ -400,6 +403,7 @@ def create_assignments(voters: pd.DataFrame, tables: pd.DataFrame, expected_aler
             "02_asignacion_mesas.csv",
             "Mesa asignada incompatible con padrón base.",
         )
+    print("[PROGRESS] 38", flush=True)
 
     wrong_circ_idx = np.random.choice(base.index, size=int(NUM_VOTERS * 0.015), replace=False)
     all_circs = base["circunscripcion_autorizada"].unique().tolist()
@@ -415,6 +419,7 @@ def create_assignments(voters: pd.DataFrame, tables: pd.DataFrame, expected_aler
             "02_asignacion_mesas.csv",
             "Circunscripción autorizada inconsistente.",
         )
+    print("[PROGRESS] 42", flush=True)
 
     wrong_ballot_idx = np.random.choice(base.index, size=int(NUM_VOTERS * 0.01), replace=False)
     for idx in wrong_ballot_idx:
@@ -485,7 +490,8 @@ def create_suffrage(
 
     records: list[dict[str, Any]] = []
     sid = 1
-    for voter_id in base_voters:
+    total_base = len(base_voters)
+    for i, voter_id in enumerate(base_voters):
         assign = assignment_map.loc[voter_id]
         records.append(
             {
@@ -504,6 +510,9 @@ def create_suffrage(
             }
         )
         sid += 1
+        if i % max(1, total_base // 4) == 0 and i > 0:
+            p = 45 + (i / total_base) * 10
+            print(f"[PROGRESS] {int(p)}", flush=True)
 
     suffrage = pd.DataFrame(records)
 
@@ -668,8 +677,9 @@ def create_manual_count(
 
     valid_votes = suffrage[suffrage["voto_registrado"] == 1].copy()
     records: list[dict[str, Any]] = []
+    total_valid = len(valid_votes)
 
-    for idx, row in valid_votes.iterrows():
+    for i, (idx, row) in enumerate(valid_votes.iterrows()):
         mark = np.random.choice(marks, p=probs)
         objective = classify_objective(mark)
         records.append(
@@ -684,6 +694,9 @@ def create_manual_count(
                 "usuario_clasificador": np.random.choice(classifiers),
             }
         )
+        if i % max(1, total_valid // 4) == 0 and i > 0:
+            p = 60 + (i / total_valid) * 10
+            print(f"[PROGRESS] {int(p)}", flush=True)
 
     manual = pd.DataFrame(records)
 
@@ -768,7 +781,13 @@ def create_results(
 
     grouped = manual.groupby("mesa_id", dropna=False)
     rows: list[dict[str, Any]] = []
-    for mesa_id, grp in grouped:
+    total_mesas = len(grouped)
+    
+    for i, (mesa_id, grp) in enumerate(grouped):
+        if i % max(1, total_mesas // 5) == 0 and i > 0:
+            p = 75 + (i / total_mesas) * 10
+            print(f"[PROGRESS] {int(p)}", flush=True)
+        
         municipio = grp["municipio"].iloc[0]
         zona_id = grp["zona_id"].iloc[0]
         circ = grp["circunscripcion"].iloc[0]
@@ -927,8 +946,13 @@ def create_logs(
     active_users = users[users["estado_usuario"] == "activo"]
     records: list[dict[str, Any]] = []
     event_idx = 1
+    total_logs = 1800
 
-    for _ in range(1800):
+    for i in range(total_logs):
+        if i % 400 == 0 and i > 0:
+            p = 85 + (i / total_logs) * 5
+            print(f"[PROGRESS] {int(p)}", flush=True)
+
         user = active_users.sample(1, random_state=RANDOM_SEED + event_idx).iloc[0]
         role = user["rol"]
         allowed = list(ROLE_ALLOWED_ACTIONS[role])
@@ -1210,20 +1234,50 @@ def save_datasets(datasets: dict[str, pd.DataFrame]) -> None:
 def main() -> None:
     np.random.seed(RANDOM_SEED)
     random.seed(RANDOM_SEED)
+    random.seed(RANDOM_SEED)
     Faker.seed(RANDOM_SEED)
     fake = Faker("es_ES")
 
     expected_alerts: list[dict[str, Any]] = []
 
+    print("[PROGRESS] 0", flush=True)
+    print("[LABEL] Generando geografía electoral", flush=True)
     _, _, _, tables = create_geography()
+    
+    print("[PROGRESS] 10", flush=True)
+    print("[LABEL] Creando usuarios del sistema", flush=True)
     users = create_users(fake, tables)
+    
+    print("[PROGRESS] 20", flush=True)
+    print("[LABEL] Generando padrón de votantes", flush=True)
     voters = inject_padron_anomalies(create_voters(tables), expected_alerts)
+    
+    print("[PROGRESS] 35", flush=True)
+    print("[LABEL] Asignando mesas y puestos", flush=True)
     assignments = create_assignments(voters, tables, expected_alerts)
+    
+    print("[PROGRESS] 45", flush=True)
+    print("[LABEL] Registrando votos (sufragio)", flush=True)
     suffrage = create_suffrage(voters, assignments, users, expected_alerts)
+    
+    print("[PROGRESS] 60", flush=True)
+    print("[LABEL] Realizando escrutinio manual", flush=True)
     manual = create_manual_count(suffrage, users, expected_alerts)
+    
+    print("[PROGRESS] 75", flush=True)
+    print("[LABEL] Consolidando resultados por mesa", flush=True)
     results = create_results(manual, assignments, voters, expected_alerts)
+    
+    print("[PROGRESS] 85", flush=True)
+    print("[LABEL] Generando logs de auditoría", flush=True)
     logs = create_logs(users, tables, expected_alerts)
+    
+    print("[PROGRESS] 92", flush=True)
+    print("[LABEL] Verificando integridad de archivos", flush=True)
     integrity = create_file_integrity(tables, users, expected_alerts)
+    
+    print("[PROGRESS] 95", flush=True)
+    print("[LABEL] Guardando datasets finales", flush=True)
 
     expected_alerts_df = pd.DataFrame(expected_alerts)
 
@@ -1240,6 +1294,8 @@ def main() -> None:
     }
 
     save_datasets(datasets)
+    print("[PROGRESS] 100", flush=True)
+    print("[LABEL] ¡Generación completada!", flush=True)
 
     print("Datasets generados correctamente.")
     print(f"Total votantes: {len(voters)}")

@@ -1,6 +1,6 @@
 """Streamlit UI for Electoral Integrity Analyzer."""
-
 from __future__ import annotations
+from typing import Any
 
 import subprocess
 from pathlib import Path
@@ -75,7 +75,6 @@ _EXPECTED_DATASETS = [
 ]
 
 
-@st.cache_data(show_spinner=False)
 def dataset_status_table(base_path: str = "data/synthetic") -> pd.DataFrame:
     path = Path(base_path)
     rows = []
@@ -91,31 +90,55 @@ def dataset_status_table(base_path: str = "data/synthetic") -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def all_datasets_exist(base_path: str = "data/synthetic") -> bool:
+    path = Path(base_path)
+    return all((path / name).exists() for name in _EXPECTED_DATASETS)
+
+
 def init_state() -> None:
     defaults = {
         "datasets": None,
         "validation": None,
         "analysis": None,
         "export_paths": None,
+        "is_busy": False,
+        "gen_action": None,
     }
     for key, value in defaults.items():
         if key not in st.session_state:
             st.session_state[key] = value
 
 
-def run_generation_script() -> tuple[bool, str]:
+def run_generation_script() -> Any:
+    """Runs the generation script and yields progress (0-100) and extra data (label or final result)."""
     try:
-        proc = subprocess.run(
-            ["python", "scripts/generate_synthetic_data.py"],
-            check=False,
-            capture_output=True,
+        proc = subprocess.Popen(
+            ["python", "-u", "scripts/generate_synthetic_data.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             text=True,
+            bufsize=1,
         )
+        current_progress = 0
+        if proc.stdout:
+            for line in proc.stdout:
+                if line.startswith("[PROGRESS]"):
+                    try:
+                        current_progress = int(line.split("]")[1].strip())
+                        yield current_progress, None
+                    except ValueError:
+                        pass
+                elif line.startswith("[LABEL]"):
+                    label = line.split("]")[1].strip()
+                    yield current_progress, label
+        proc.wait()
         if proc.returncode != 0:
-            return False, proc.stderr.strip() or "Falló la generación de datasets"
-        return True, proc.stdout.strip()
-    except Exception:
-        return False, "No fue posible ejecutar el script de generación en este entorno."
+            stderr = proc.stderr.read() if proc.stderr else ""
+            yield 100, (False, stderr.strip() or "Falló la generación de datasets")
+        else:
+            yield 100, (True, "Datasets generados correctamente.")
+    except Exception as e:
+        yield 100, (False, f"Error al ejecutar script: {str(e)}")
 
 
 def run_analysis(datasets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
@@ -252,14 +275,14 @@ def render_stage_alerts(stage_name: str) -> None:
         else:
             severity_counts = stage_alerts["severidad"].value_counts().reset_index()
             severity_counts.columns = ["severidad", "total"]
-            st.dataframe(severity_counts, use_container_width=True)
+            st.dataframe(severity_counts, width="stretch")
             st.info("Las alertas son señales para revisión; no constituyen prueba de fraude.")
 
     with tabs[1]:
         if stage_alerts.empty:
             st.success("No hay registros de alerta para esta etapa.")
         else:
-            st.dataframe(stage_alerts, use_container_width=True)
+            st.dataframe(stage_alerts, width="stretch")
 
     with tabs[2]:
         if stage_alerts.empty:
@@ -267,7 +290,7 @@ def render_stage_alerts(stage_name: str) -> None:
         else:
             evidence_cols = ["codigo_alerta", "entidad_id", "descripcion", "evidencia", "accion_recomendada"]
             present = [c for c in evidence_cols if c in stage_alerts.columns]
-            st.dataframe(stage_alerts[present], use_container_width=True)
+            st.dataframe(stage_alerts[present], width="stretch")
 
 
 def render_home() -> None:
@@ -282,7 +305,7 @@ def render_home() -> None:
     render_metrics()
 
     st.markdown("### Estado de datasets")
-    st.dataframe(dataset_status_table(), use_container_width=True)
+    st.dataframe(dataset_status_table(), width="stretch")
 
     if not st.session_state.datasets:
         st.info("Vaya a **Cargar / generar datasets** para preparar y analizar los datos.")
@@ -291,31 +314,89 @@ def render_home() -> None:
 def render_data_management() -> None:
     st.title("Cargar / generar datasets")
 
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button("Generar datasets sintéticos", type="primary"):
-            ok, message = run_generation_script()
-            dataset_status_table.clear()
-            if ok:
-                st.success("Datasets generados correctamente.")
-                if message:
-                    st.code(message)
+    datasets_exist = all_datasets_exist()
+
+    if datasets_exist:
+        st.info("Estado: datasets existentes detectados")
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("Cargar datasets", type="primary", disabled=st.session_state.is_generating):
                 safe_load_and_validate()
-            else:
-                st.warning("No se pudieron generar datasets con el script.")
-                st.code(message)
+        with col2:
+            if st.button("Regenerar datasets", disabled=st.session_state.is_generating):
+                st.session_state.is_generating = True
+                st.session_state.gen_action = "regenerar"
+                st.rerun()
+    else:
+        if st.button("Generar datasets sintéticos", type="primary", disabled=st.session_state.is_generating):
+            st.session_state.is_generating = True
+            st.session_state.gen_action = "generar"
+            st.rerun()
 
-    with col2:
-        if st.button("Cargar datasets existentes"):
+    # Placeholders for full-width progress reporting - moved BELOW buttons
+    label_placeholder = st.empty()
+    progress_placeholder = st.empty()
+
+    # Handle the generation process if triggered
+    if st.session_state.is_busy and st.session_state.gen_action:
+        action_name = "generación" if st.session_state.gen_action == "generar" else "regeneración"
+        progress_bar = progress_placeholder.progress(0)
+        
+        success = False
+        message = ""
+        current_label = f"Preparando {action_name}"
+        
+        for progress, data in run_generation_script():
+            if isinstance(data, str):
+                current_label = data
+            
+            label_placeholder.markdown(f"""
+                <div style="height: 30px; display: flex; align-items: flex-end; margin-bottom: 5px;">
+                    <span style="font-weight: 500; color: #1E88E5; animation: fadeIn 0.8s ease-in-out;">
+                        {current_label}<span class="dots"></span>
+                    </span>
+                </div>
+                <style>
+                    @keyframes fadeIn {{
+                        from {{ opacity: 0.3; transform: translateY(2px); }}
+                        to {{ opacity: 1; transform: translateY(0); }}
+                    }}
+                    .dots::after {{
+                        content: '.';
+                        animation: loading-dots 1.5s steps(4, end) infinite;
+                    }}
+                    @keyframes loading-dots {{
+                        0% {{ content: ''; }}
+                        25% {{ content: '.'; }}
+                        50% {{ content: '..'; }}
+                        75% {{ content: '...'; }}
+                        100% {{ content: ''; }}
+                    }}
+                </style>
+            """, unsafe_allow_html=True)
+            
+            progress_bar.progress(progress / 100.0)
+            if not isinstance(data, str) and data is not None:
+                success, message = data
+        
+        st.session_state.is_busy = False
+        st.session_state.gen_action = None
+        
+        if success:
+            st.success("Datasets generados correctamente.")
             safe_load_and_validate()
+            st.rerun()
+        else:
+            st.error(f"Error: {message}")
+            st.rerun()
 
-    st.dataframe(dataset_status_table(), use_container_width=True)
+    st.dataframe(dataset_status_table(), width="stretch")
 
     if st.session_state.datasets:
         st.success("Datasets disponibles en sesión.")
 
         preview_name = st.selectbox("Vista previa de dataset", list(st.session_state.datasets.keys()))
-        st.dataframe(st.session_state.datasets[preview_name].head(20), use_container_width=True)
+        st.dataframe(st.session_state.datasets[preview_name].head(20), width="stretch")
 
         validation = st.session_state.validation or {"errors": []}
         if validation["errors"]:
@@ -354,9 +435,9 @@ def render_results_stage() -> None:
     charts = build_required_charts(analysis["alerts"], results, analysis["ranking"])
 
     with st.expander("Visualizaciones de esta etapa", expanded=True):
-        st.plotly_chart(charts["histograma_participacion"], use_container_width=True)
+        st.plotly_chart(charts["histograma_participacion"], width="stretch")
         st.caption("Permite identificar mesas con participación inusualmente alta o baja.")
-        st.plotly_chart(charts["boxplot_nulos_invalidos"], use_container_width=True)
+        st.plotly_chart(charts["boxplot_nulos_invalidos"], width="stretch")
         st.caption("Resalta mesas con tasas atípicas de nulos/inválidos.")
 
 
@@ -378,15 +459,15 @@ def render_consolidated_report() -> None:
     )
 
     with tab_summary:
-        st.dataframe(summary, use_container_width=True)
+        st.dataframe(summary, width="stretch")
         render_metrics()
 
     with tab_table:
         filtered = _filter_alerts(alerts)
-        st.dataframe(filtered, use_container_width=True)
+        st.dataframe(filtered, width="stretch")
 
         st.markdown("### Ranking de riesgo")
-        st.dataframe(ranking, use_container_width=True)
+        st.dataframe(ranking, width="stretch")
 
         export_paths = st.session_state.export_paths
         if export_paths:
@@ -405,19 +486,19 @@ def render_consolidated_report() -> None:
         results = datasets.get("05_resultados_mesa.csv", pd.DataFrame()) if datasets else pd.DataFrame()
         charts = build_required_charts(alerts, results, ranking)
 
-        st.plotly_chart(charts["alertas_por_etapa"], use_container_width=True)
+        st.plotly_chart(charts["alertas_por_etapa"], width="stretch")
         st.caption("Muestra en qué etapas se concentra el riesgo detectado.")
 
-        st.plotly_chart(charts["alertas_por_severidad"], use_container_width=True)
+        st.plotly_chart(charts["alertas_por_severidad"], width="stretch")
         st.caption("Permite priorizar revisión por criticidad.")
 
-        st.plotly_chart(charts["histograma_participacion"], use_container_width=True)
+        st.plotly_chart(charts["histograma_participacion"], width="stretch")
         st.caption("Identifica mesas con participación atípica.")
 
-        st.plotly_chart(charts["boxplot_nulos_invalidos"], use_container_width=True)
+        st.plotly_chart(charts["boxplot_nulos_invalidos"], width="stretch")
         st.caption("Señala dispersión de nulos e inválidos entre mesas.")
 
-        st.plotly_chart(charts["ranking_riesgo_mesas"], use_container_width=True)
+        st.plotly_chart(charts["ranking_riesgo_mesas"], width="stretch")
         st.caption("Prioriza las 10 mesas con mayor score de riesgo.")
 
     with tab_method:
