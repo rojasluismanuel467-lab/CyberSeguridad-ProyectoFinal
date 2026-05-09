@@ -20,7 +20,7 @@ st.set_page_config(page_title="Electoral Integrity Analyzer", layout="wide")
 
 MENU_OPTIONS = [
     "Inicio",
-    "Cargar / generar datasets",
+    "Preparar análisis",
     "Padrón y elegibilidad",
     "Circunscripción y mesa",
     "Registro de sufragio",
@@ -318,20 +318,28 @@ def render_home() -> None:
 
     st.divider()
     
-    col1, col2 = st.columns([1, 2])
-    with col1:
-        if st.button("🚀 Comenzar análisis", type="primary", use_container_width=True):
-            st.session_state.current_page = "Cargar / generar datasets"
-            st.rerun()
+    if st.session_state.is_busy:
+        st.info("⏳ El sistema está procesando datos en este momento...")
+    else:
+        col1, col2 = st.columns([1, 2])
+        with col1:
+            if st.button("🚀 Comenzar análisis", type="primary", use_container_width=True):
+                st.session_state.current_page = "Preparar análisis"
+                st.rerun()
 
 
 def render_data_management() -> None:
-    st.title("Cargar / generar datasets")
+    st.title("Preparar análisis")
 
     datasets_exist = all_datasets_exist()
 
+    # AUTO-GENERATE if missing
+    if not datasets_exist and not st.session_state.is_busy:
+        st.session_state.is_busy = True
+        st.session_state.gen_action = "generar"
+        st.rerun()
+
     if datasets_exist:
-        st.info("Estado: datasets existentes detectados")
         col1, col2 = st.columns(2)
         with col1:
             # Unified action: Load (if needed) and Analyze
@@ -369,11 +377,7 @@ def render_data_management() -> None:
                 st.session_state.gen_message = None
                 st.rerun()
     else:
-        if st.button("Generar datasets sintéticos", type="primary", disabled=st.session_state.is_busy):
-            st.session_state.is_busy = True
-            st.session_state.gen_action = "generar"
-            st.session_state.gen_message = None
-            st.rerun()
+        st.warning("No se detectaron datasets. Iniciando generación automática...")
 
     # Display persistent messages below buttons
     if st.session_state.gen_message:
@@ -598,7 +602,7 @@ def main() -> None:
 
     pages = {
         "Inicio": render_home,
-        "Cargar / generar datasets": render_data_management,
+        "Preparar análisis": render_data_management,
         "Padrón y elegibilidad": lambda: render_stage_alerts("Padrón y elegibilidad"),
         "Circunscripción y mesa": lambda: render_stage_alerts("Circunscripción y mesa"),
         "Registro de sufragio": lambda: render_stage_alerts("Registro de sufragio"),
