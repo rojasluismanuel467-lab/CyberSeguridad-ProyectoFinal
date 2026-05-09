@@ -297,20 +297,32 @@ def render_stage_alerts(stage_name: str) -> None:
 
 def render_home() -> None:
     st.title("Electoral Integrity Analyzer")
-    st.subheader("Analizador de Integridad Electoral por Etapas")
+    st.subheader("Plataforma de Auditoría Forense Electoral")
     render_ethical_warning()
-    st.write(
-        "Detecta anomalías en datasets electorales sintéticos por etapa "
-        "mediante reglas determinísticas y Z-score."
-    )
 
-    render_metrics()
+    st.markdown("""
+    ### ¿Cómo funciona el análisis?
+    Esta plataforma utiliza una combinación de técnicas avanzadas para detectar posibles irregularidades en procesos electorales a partir de datasets sintéticos:
 
-    st.markdown("### Estado de datasets")
-    st.dataframe(dataset_status_table(), width="stretch")
+    1. **Reglas Determinísticas**: Verificación estricta de reglas de negocio (ej. votantes no inscritos, múltiples votos por persona, o inconsistencias en la geografía electoral).
+    2. **Análisis Estadístico (Z-Score)**: Identificamos anomalías matemáticas en la participación y comportamiento de votos nulos/inválidos que se alejan significativamente del promedio nacional.
+    3. **Auditoría de Integridad**: Comprobamos mediante firmas digitales (hashes) que los archivos de resultados no han sido manipulados después de su generación.
+    4. **Trazabilidad de Logs**: Análisis de eventos de sistema para detectar accesos no autorizados o acciones sospechosas durante el proceso.
 
-    if not st.session_state.datasets:
-        st.info("Vaya a **Cargar / generar datasets** para preparar y analizar los datos.")
+    ### ¿Qué puede encontrar con esta herramienta?
+    - **Fraude en el Padrón**: Registros duplicados o votantes inhabilitados.
+    - **Inconsistencias de Mesa**: Resultados que no coinciden con el conteo manual o participación superior al 100%.
+    - **Anomalías Estadísticas**: Mesas con comportamientos atípicos que sugieren intervención externa.
+    - **Brechas de Integridad**: Archivos de datos alterados o logs de sistema borrados.
+    """)
+
+    st.divider()
+    
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        if st.button("🚀 Comenzar análisis", type="primary", use_container_width=True):
+            st.session_state.current_page = "Cargar / generar datasets"
+            st.rerun()
 
 
 def render_data_management() -> None:
@@ -322,31 +334,34 @@ def render_data_management() -> None:
         st.info("Estado: datasets existentes detectados")
         col1, col2 = st.columns(2)
         with col1:
-            if st.session_state.datasets is None:
-                if st.button("Cargar datasets", type="primary", disabled=st.session_state.is_busy):
+            # Unified action: Load (if needed) and Analyze
+            btn_label = "Ejecutar análisis completo"
+            if st.button(btn_label, type="primary", disabled=st.session_state.is_busy):
+                try:
                     st.session_state.is_busy = True
-                    st.session_state.load_trigger = True
+                    with st.spinner("Procesando datos y ejecutando análisis..."):
+                        # 1. Load and validate if not in session
+                        if st.session_state.datasets is None:
+                            safe_load_and_validate()
+                        
+                        # 2. Check for errors before analysis
+                        validation = st.session_state.validation or {"errors": []}
+                        if validation["errors"]:
+                            st.warning("No se puede analizar: existen errores de validación en los archivos.")
+                        else:
+                            # 3. Run Analysis
+                            analysis = run_analysis(st.session_state.datasets)
+                            st.session_state.analysis = analysis
+                            export_paths = export_reports(
+                                analysis["alerts"], analysis["ranking"], analysis["summary"]
+                            )
+                            st.session_state.export_paths = export_paths
+                            st.session_state.gen_message = ("success", "Análisis completado y reportes generados.")
+                except Exception as e:
+                    st.session_state.gen_message = ("error", f"Error durante el proceso: {str(e)}")
+                finally:
+                    st.session_state.is_busy = False
                     st.rerun()
-            else:
-                if st.button("Ejecutar análisis completo", type="primary", disabled=st.session_state.is_busy):
-                    validation = st.session_state.validation or {"errors": []}
-                    if validation["errors"]:
-                        st.warning("Corrija primero los errores de validación.")
-                    else:
-                        try:
-                            st.session_state.is_busy = True
-                            with st.spinner("Ejecutando análisis..."):
-                                analysis = run_analysis(st.session_state.datasets)
-                                st.session_state.analysis = analysis
-                                export_paths = export_reports(
-                                    analysis["alerts"], analysis["ranking"], analysis["summary"]
-                                )
-                                st.session_state.export_paths = export_paths
-                            st.success("Análisis ejecutado y reportes exportados correctamente.")
-                        except Exception:
-                            st.warning("No fue posible ejecutar el análisis completo.")
-                        finally:
-                            st.session_state.is_busy = False
         with col2:
             if st.button("Regenerar datasets", disabled=st.session_state.is_busy):
                 st.session_state.is_busy = True
@@ -424,7 +439,7 @@ def render_data_management() -> None:
             st.session_state.gen_message = ("error", f"Error: {message}")
             st.rerun()
 
-    # Handle the load process if triggered
+    # Handle the load process if triggered (not needed now but kept for safety if used elsewhere)
     if st.session_state.load_trigger:
         with st.spinner("Cargando y validando datasets..."):
             safe_load_and_validate()
@@ -578,6 +593,9 @@ def _nav_label(name: str) -> str:
 def main() -> None:
     init_state()
 
+    if "current_page" not in st.session_state:
+        st.session_state.current_page = "Inicio"
+
     pages = {
         "Inicio": render_home,
         "Cargar / generar datasets": render_data_management,
@@ -591,7 +609,19 @@ def main() -> None:
     }
 
     st.sidebar.title("Navegación")
-    selected = st.sidebar.radio("Seleccione una etapa", MENU_OPTIONS, format_func=_nav_label)
+    
+    # Simple navigation with session state
+    selected = st.sidebar.radio(
+        "Seleccione una etapa", 
+        MENU_OPTIONS, 
+        index=MENU_OPTIONS.index(st.session_state.current_page),
+        format_func=_nav_label
+    )
+    
+    if selected != st.session_state.current_page:
+        st.session_state.current_page = selected
+        st.rerun()
+    
     pages[selected]()
 
 
