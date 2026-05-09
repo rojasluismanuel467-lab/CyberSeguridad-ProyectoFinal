@@ -1,5 +1,7 @@
 # Electoral Integrity Analyzer
 
+### 📄 [Informe Final (PDF)](./docs/informe.pdf) | 🎥 [Video Demostrativo (YouTube)](#)
+
 Aplicación académica en Python + Streamlit para detectar anomalías en un proceso electoral simulado. Organiza el análisis por etapa y exporta reportes en CSV.
 
 > **Advertencia ética:** Este sistema utiliza datos sintéticos generados con fines académicos. Las alertas no constituyen prueba de fraude electoral. Los resultados deben interpretarse como señales de revisión que requieren validación documental, técnica y contextual. No se usan datos personales reales ni se analizan procesos electorales reales.

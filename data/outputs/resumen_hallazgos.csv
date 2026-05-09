@@ -1,9 +1,9 @@
 metrica,valor
-alertas_totales,1153.0
-alertas_criticas,512.0
-entidades_en_ranking,578.0
-alertas_esperadas,1171.0
-alertas_detectadas,1145.0
-coincidencias,770.0
-precision_aproximada,0.6725
-cobertura_aproximada,0.6576
+alertas_totales,1149.0
+alertas_criticas,507.0
+entidades_en_ranking,576.0
+alertas_esperadas,1169.0
+alertas_detectadas,1141.0
+coincidencias,767.0
+precision_aproximada,0.6722
+cobertura_aproximada,0.6561
