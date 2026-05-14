@@ -3,6 +3,8 @@
 ## Objetivo de la demo
 Mostrar en menos de 8 minutos el flujo completo del sistema de análisis electoral sintético por etapas.
 
+> Para el guion completo (más técnico y enfocado a ciberseguridad y estándares NIST/EAC), ver: `docs/guion_video.md`.
+
 ## Paso 1: Preparación
 ```bash
 python -m venv .venv

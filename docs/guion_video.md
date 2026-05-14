@@ -1,63 +1,95 @@
-# Guión de Video: Electoral Integrity Analyzer
+# Guion de Video: Electoral Integrity Analyzer (Enfoque Ciberseguridad + Estandares NIST/EAC)
 
-Este documento contiene la estructura y el guión sugerido para la presentación en video del proyecto. Está diseñado para 3 integrantes, equilibrando los tiempos de habla y combinando la explicación técnica con la demostración en vivo.
+Este documento contiene la estructura y el guion sugerido para la presentacion en video del proyecto. Esta pensado para 3 integrantes, equilibrando tiempos y combinando demostracion en vivo con explicacion tecnica.
 
-## 📋 Información General
-- **Duración Estimada**: 5 a 7 minutos.
-- **Herramientas**: Grabación de pantalla compartida (Zoom, Teams, OBS, etc.).
-- **Roles sugeridos**:
-  - **Integrante 1 (I1)**: Introducción, Contexto Ético y Conclusión.
-  - **Integrante 2 (I2)**: Flujo de Trabajo, Preparación de Datos y Ejecución del Análisis.
-  - **Integrante 3 (I3)**: Explicación de Hallazgos, Visualizaciones y Metodología Forense.
+Objetivo del guion: que quede claro que decisiones se tomaron en ciberseguridad (auditoria, integridad, trazabilidad, RBAC/SoD) y como se ven reflejadas en el codigo y en la UI.
 
----
+## Informacion General
+- Duracion estimada: 5 a 7 minutos.
+- Modalidad: grabacion de pantalla (Streamlit) + camara opcional al inicio/cierre.
 
-## 🎬 Acto 1: Introducción y Contexto Ético (Integrante 1)
-**Duración**: ~1.5 minutos
+Roles sugeridos:
+- Integrante 1 (I1): contexto, estandares NIST/EAC, arquitectura, SSDF y UX/accesibilidad.
+- Integrante 2 (I2): datasets sinteticos, validacion y ejecucion del pipeline.
+- Integrante 3 (I3): hallazgos y foco fuerte en Logs e integridad (controles cyber).
 
-| 🎥 ¿Qué mostrar en pantalla? | 🗣️ ¿Qué decir? (Guión base) |
-| :--- | :--- |
-| **Cámara**: Los tres integrantes saludan o diapositiva de título. | **I1**: "Hola a todos. Somos [Nombres del equipo] y hoy les presentamos el **Electoral Integrity Analyzer**, una plataforma de auditoría forense diseñada para analizar la transparencia en procesos electorales." |
-| **Pantalla**: Aplicación abierta en la pestaña **Inicio**, enfocando la "Advertencia Ética" y la descripción metodológica. | **I1**: "Antes de comenzar la demostración, queremos hacer una **declaración ética fundamental**: Todos los datos que verán en esta herramienta son **100% sintéticos y generados de forma aleatoria** mediante scripts de Python para fines puramente académicos y de demostración de ciberseguridad. No utilizamos datos de votantes reales, ni representamos ningún proceso electoral gubernamental en particular." |
-| **Pantalla**: Hacer scroll suave por la página de inicio mostrando las técnicas (Reglas, Z-Score, Hashes). | **I1**: "Nuestro objetivo es demostrar cómo, mediante técnicas forenses como reglas determinísticas, análisis estadístico y auditoría de integridad, es posible detectar anomalías y posibles fraudes. A continuación, mi compañero(a) [Nombre de I2] les mostrará cómo la herramienta prepara y procesa estos datos." |
+## Mensajes Clave
+1. Esto no es un sistema de votacion: es una herramienta de auditoria forense sobre datos electorales sinteticos.
+2. Lo "cyber" del proyecto se evidencia en controles: auditoria (logs), integridad (hashes y control de publicacion) y control de acceso (RBAC + segregacion de funciones).
+3. Los datos/etapas se alinean conceptualmente con NIST Common Data Formats (CDF) y la guia EAC de auditoria post-electoral (sin afirmar certificacion ni conformidad oficial de esquema).
 
----
+## Mapeo Rapido: NIST/EAC -> Artefactos del Proyecto
+Sugerencia: mostrar esta tabla 10-15 segundos.
 
-## 🎬 Acto 2: Preparación de Datos y Análisis Automático (Integrante 2)
-**Duración**: ~1.5 a 2 minutos
-
-| 🎥 ¿Qué mostrar en pantalla? | 🗣️ ¿Qué decir? (Guión base) |
-| :--- | :--- |
-| **Pantalla**: Hacer clic en el botón `🚀 Comenzar análisis` de la página de inicio. El sistema redirige a **Preparar análisis**. | **I2**: "Gracias, [Nombre I1]. Cuando iniciamos la plataforma, lo primero que necesitamos es un conjunto de datos. Hemos diseñado un sistema que automatiza esta preparación." |
-| **Pantalla**: Mostrar la barra de carga automática y los mensajes ("Generando datos de votantes...", "Uniendo datos..."). | **I2**: "Si el sistema detecta que no hay datos previos, **inicia una generación sintética en tiempo real**. Aquí se crean simulaciones de padrones, asignación de mesas, escrutinios y logs de sistema, imitando las etapas de una elección real." |
-| **Pantalla**: Una vez terminada la carga, hacer clic en una fila de la tabla inferior para mostrar la vista previa del archivo. | **I2**: "Una vez generados, el sistema nos permite inspeccionar rápidamente la estructura de los archivos directamente desde la interfaz. Con los datos listos, procedemos a iniciar la auditoría." |
-| **Pantalla**: Hacer clic en el botón `Ejecutar análisis completo` y esperar a que aparezca el Dashboard de éxito con las 7 tarjetas. | **I2**: "Al ejecutar el análisis, la plataforma lanza un *pipeline* que aplica todas nuestras reglas de negocio y algoritmos. Como vemos, el proceso ha finalizado con éxito, generando reportes para las diferentes etapas. Ahora, [Nombre de I3] les guiará por los resultados y hallazgos." |
+| Estandar / Artefacto | En el proyecto | Archivo(s) | Que cubre en ciberseguridad |
+|---|---|---|---|
+| NIST CDF (interoperabilidad) | diccionario + esquemas + validacion | `docs/diccionario_datos.md`, `src/domain/schemas.py`, `src/data_loader/validators.py` | consistencia de evidencia, reduccion de errores, trazabilidad |
+| NIST VRI | padron/eligibilidad | `01_padron_votantes.csv` | calidad de datos, minimizacion de PII (hash), deteccion de registros invalidos |
+| NIST CVR | papeleta/voto (simulado) | `04_clasificacion_votos_manual.csv` | inconsistencias y manipulacion humana (forense) |
+| NIST ERR | resultados agregados | `05_resultados_mesa.csv` | validaciones aritmeticas + outliers para priorizar auditoria |
+| NIST EEL | logs de eventos | `06_logs_eventos.csv` | violaciones RBAC, brute force, post-cierre, SoD |
+| EAC Post-Election Audit Guide | evidencia exportable + priorizacion | `data/outputs/*.csv` | evidencia portable (CSV) y ranking de riesgo |
 
 ---
 
-## 🎬 Acto 3: Exploración de Hallazgos y Visualizaciones (Integrante 3)
-**Duración**: ~2.5 minutos
+## Acto 1: Contexto, Estandares, Arquitectura y UX (I1)
+Duracion: ~1.5 a 2 minutos.
 
-| 🎥 ¿Qué mostrar en pantalla? | 🗣️ ¿Qué decir? (Guión base) |
-| :--- | :--- |
-| **Pantalla**: Dashboard de éxito en la vista de Preparar Análisis. Hacer clic en el botón `Ver detalle` de la tarjeta **Resultados por mesa**. | **I3**: "Gracias, [Nombre I2]. Nuestro hub de resultados centraliza las anomalías detectadas. Empecemos revisando la etapa de Escrutinio y Resultados por Mesa." |
-| **Pantalla**: Dentro de la pestaña, ir a la sub-pestaña **Hallazgos**. Mostrar cómo se ordenan desde los rojos (Críticos) hasta los azules. | **I3**: "Una de las características clave de nuestra herramienta es la **traducción de anomalías a lenguaje natural**. En lugar de ver solo tablas de datos crudos, el sistema clasifica y describe el problema. Por ejemplo, prioriza en rojo las alertas **críticas**, como mesas donde la participación supera matemáticamente el 100%, indicándonos exactamente a cuántas entidades afecta para una mitigación inmediata." |
-| **Pantalla**: Hacer scroll hacia abajo para abrir el expander "Visualizaciones de esta etapa" (Histograma y Boxplot). | **I3**: "Adicionalmente, aplicamos modelos estadísticos como el cálculo del **Z-Score**. Esto nos genera histogramas y gráficos de caja (*boxplots*) que resaltan visualmente mesas con tasas de participación o votos nulos atípicamente altas en comparación con la media, lo cual es un indicador clásico de manipulación local." |
-| **Pantalla**: Navegar a la pestaña **Logs e integridad** en el Hub de Resultados. | **I3**: "Finalmente, desde el punto de vista de la ciberseguridad pura, la etapa de Integridad verifica si los archivos originales han sido modificados después de su creación, comprobando **firmas digitales (hashes)**, y revisa accesos no autorizados en los registros del sistema." |
-
----
-
-## 🎬 Acto 4: Conclusión (Integrante 1 o 3)
-**Duración**: ~1 minuto
-
-| 🎥 ¿Qué mostrar en pantalla? | 🗣️ ¿Qué decir? (Guión base) |
-| :--- | :--- |
-| **Pantalla**: Cambiar a la pestaña **Reporte Consolidado**. Mostrar el score general y las métricas. | **I1 o I3**: "Para cerrar, la plataforma compila todas estas alertas en un **Reporte Consolidado** que califica el nivel de riesgo global de la elección mediante un sistema de puntuación (*scoring*)." |
-| **Pantalla**: Volver a la página de **Inicio** o mostrar el repositorio de GitHub (Opcional). | **I1 o I3**: "En conclusión, el Electoral Integrity Analyzer demuestra que al combinar reglas lógicas de negocio, estadística predictiva y auditoría criptográfica en un diseño centrado en la usabilidad, podemos proveer a los analistas de una herramienta poderosa para proteger la integridad de la información crítica. Muchas gracias por su atención." |
+| Que mostrar en pantalla | Que decir (guion tecnico) |
+|---|---|
+| Inicio (titulo + advertencia etica) | **I1**: "Somos [Nombres]. Presentamos Electoral Integrity Analyzer: una herramienta de auditoria forense para detectar anomalias en procesos electorales simulados, con foco en ciberseguridad y trazabilidad." |
+| Advertencia etica | **I1**: "Todos los datos son sinteticos. No buscamos probar fraude real: buscamos generar senales de auditoria y evidencia reproducible sin exponer datos personales reales." |
+| Referencias (opcional `docs/metodologia.md`) | **I1**: "Nos alineamos conceptualmente con NIST CDF: VRI, CVR, ERR y EEL, y con el enfoque del EAC para auditorias post-electorales. En desarrollo seguro usamos el marco NIST SSDF (SP 800-218): separacion por capas, validacion de entradas, pruebas y reproducibilidad." |
+| Arquitectura (README o `docs/arquitectura.md`) | **I1**: "Arquitectura por capas: UI en `app.py`, pipeline en `src/pipeline/analysis_pipeline.py`, validacion en `src/data_loader/validators.py`, detectores por etapa en `src/detectors/`, y exportacion de evidencia en `src/reports/`." |
+| UI (sidebar + tabs + expanders) | **I1**: "UX: aplicamos progressive disclosure (tabs/expanders) para no saturar al analista. Heuristicas NN/g: visibilidad de estado (metricas y mensajes), consistencia por etapa y prevencion de errores (no ejecuta analisis si falla validacion). Accesibilidad: guia WCAG 2.2 y principios WAI/POUR (texto claro, navegacion consistente y no depender solo de color)." |
 
 ---
 
-## 💡 Consejos de Grabación
-1. **Practiquen la navegación**: Quien comparta pantalla debe saber exactamente dónde hacer clic antes de que el compañero empiece a hablar.
-2. **Usen el botón de "Regenerar datasets"**: Si graban el video varias veces y ya tienen los datos generados, recuerden usar el botón "Regenerar datasets" antes de empezar a grabar para poder mostrar el proceso de carga automático.
-3. **Hagan pausas**: Si algo carga, usen ese tiempo para explicar qué está haciendo el sistema "por debajo" (ej. "En este momento el algoritmo está calculando las desviaciones estándar...").
+## Acto 2: Datos Sinteticos, Validacion y Ejecucion (I2)
+Duracion: ~1.5 a 2 minutos.
+
+| Que mostrar en pantalla | Que decir (guion tecnico) |
+|---|---|
+| Menu: "Cargar / generar datasets" | **I2**: "Generamos datasets con `scripts/generate_synthetic_data.py` usando `RANDOM_SEED = 42` para reproducibilidad. Esto es clave para auditoria: misma entrada, mismo resultado." |
+| Boton: "Generar datasets sinteticos" + tabla de estado | **I2**: "Privacidad: evitamos PII real; por ejemplo `documento_hash` se calcula con SHA-256. Tambien simulamos cadena de custodia con hashes en logs (`hash_antes/hash_despues`) y en integridad (`hash_original/hash_actual`)." |
+| Boton: "Cargar datasets existentes" + validacion | **I2**: "La carga usa `pandas.read_csv` y la validacion asegura: columnas obligatorias, IDs no nulos, fechas/horas validas, categorias permitidas y llaves referenciales entre datasets. Si hay errores, el sistema bloquea la ejecucion del analisis." |
+| Boton: "Ejecutar analisis completo" | **I2**: "Al ejecutar, la UI orquesta el pipeline: corre detectores, consolida alertas con un esquema estandar y produce ranking/summary, ademas de exportar CSVs para evidencia." |
+
+---
+
+## Acto 3: Hallazgos y Controles Cyber (I3)
+Duracion: ~2.5 a 3 minutos.
+
+### 3A. Deteccion estadistica (priorizacion)
+| Que mostrar en pantalla | Que decir (guion tecnico) |
+|---|---|
+| Resultados por mesa + visualizaciones | **I3**: "Para priorizar auditoria, usamos Z-score con `scipy.stats.zscore` (explicable y trazable). Histogramas y boxplots resaltan mesas outlier en participacion o nulos/invalidos." |
+
+### 3B. Logs e integridad (nucleo cyber)
+| Que mostrar en pantalla | Que decir (guion tecnico) |
+|---|---|
+| Logs e integridad -> "Tabla de alertas" | **I3**: "Esta etapa implementa controles de seguridad operacional en `src/detectors/log_integrity_detector.py`: auditoria, RBAC, segregacion de funciones e integridad." |
+| Mostrar LOG-02 | **I3**: "LOG-02: accion no permitida por rol. Hallazgo directo de control de acceso (RBAC)." |
+| Mostrar LOG-06 | **I3**: "LOG-06: auto-aprobacion. Segregacion de funciones (SoD): quien cambia no aprueba." |
+| Mostrar LOG-01 | **I3**: "LOG-01: modificacion post-cierre sin aprobacion. Control de cambios y proteccion contra tampering tardio." |
+| Mostrar LOG-04 | **I3**: "LOG-04: multiples fallos de login. Senal tipica de brute force o credenciales comprometidas." |
+| Mostrar INT-01..INT-04 | **I3**: "INT-01..INT-04 validan integridad de artefactos: hash original vs actual, publicacion vs firma, y cambios despues del cierre. Esto simula evidencia criptografica y control de release." |
+
+### 3C. Reporte consolidado (evidencia + ranking)
+| Que mostrar en pantalla | Que decir (guion tecnico) |
+|---|---|
+| Reporte consolidado + descargas CSV | **I3**: "El consolidado traduce severidad a score y rankea entidades (mesa/usuario/archivo/evento). Exportamos evidencia en CSV para auditoria fuera de la UI." |
+
+---
+
+## Acto 4: Cierre (I1 o I3)
+Duracion: ~40 a 60 segundos.
+
+| Que mostrar en pantalla | Que decir (guion tecnico) |
+|---|---|
+| Resumen o consolidado | **I1/I3**: "Conclusion: el proyecto es auditable y defensivo: datos validados, pipeline modular, reglas explicables, estadistica transparente y controles cyber sobre logs e integridad. Permite priorizar revision y exportar evidencia." |
+
+## Consejos de Grabacion
+1. Ensayen la navegacion por las secciones reales del menu: "Cargar / generar datasets", "Resultados por mesa", "Logs e integridad", "Reporte consolidado".
+2. En Logs e integridad, muestren solo 3-4 alertas (LOG-02, LOG-06, INT-01, INT-03) y expliquen el control detras.
+3. Si preguntan "donde esta lo cyber", respondan con el triangulo: RBAC/SoD + auditoria (logs) + integridad (hash/firma/publicacion) y apunten al detector de esa etapa.
