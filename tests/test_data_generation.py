@@ -7,6 +7,8 @@ from pathlib import Path
 import pandas as pd
 
 from scripts.generate_synthetic_data import main as generate_data_main
+from src.data_loader.csv_loader import load_datasets
+from src.data_loader.validators import validate_datasets
 from src.domain.schemas import DATASET_ORDER, DATASET_SCHEMAS
 
 BASE_PATH = Path("data/synthetic")
@@ -33,3 +35,10 @@ def test_expected_alerts_not_empty() -> None:
     alerts = pd.read_csv(BASE_PATH / "08_alertas_esperadas.csv")
     assert len(alerts) > 0
     assert {"codigo_alerta", "entidad_tipo", "entidad_id"}.issubset(alerts.columns)
+
+
+def test_generated_datasets_pass_validation() -> None:
+    generate_data_main()
+    datasets = load_datasets()
+    validation = validate_datasets(datasets)
+    assert validation["errors"] == []

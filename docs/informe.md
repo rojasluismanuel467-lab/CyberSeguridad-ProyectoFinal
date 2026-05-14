@@ -3,14 +3,10 @@
 
 **Fecha:** 3 de junio de 2026
 
----
-
 ## 1. Contexto
 Este proyecto desarrolla una solución académica para identificar comportamientos inusuales en un proceso electoral simulado. El enfoque principal es la ciberseguridad y la integridad de los datos, analizando el ciclo electoral completo: desde el padrón de votantes hasta la publicación de resultados y la integridad de los logs del sistema.
 
 **Objetivo:** Aplicar técnicas de análisis de datos para detectar patrones sospechosos que puedan comprometer la integridad de una elección, utilizando únicamente datos sintéticos.
-
----
 
 ## 2. Metodología Detallada
 
@@ -56,23 +52,18 @@ Se utiliza para detectar anomalías relativas al comportamiento del conjunto, do
 3.  **Concentración del ganador:** Si un candidato obtiene un porcentaje de votos que se aleja radicalmente de la distribución normal (Z > 3), se marca para revisión de coherencia política.
 4.  **Carga de trabajo por operador:** Identifica usuarios en los logs que realizaron una cantidad de acciones (modificaciones o registros) que se aleja de la media, lo cual podría indicar un operador comprometido o una automatización malintencionada.
 
----
-
 ## 3. Resultados y Hallazgos
 El sistema consolidó las alertas en un ranking de riesgo priorizado:
 
-*   **Ranking de Riesgo:** Se utiliza una ponderación de severidad (Crítica=3, Alta=2, Media=1). Las mesas con un score acumulado > 12 se clasifican como de **"Revisión Prioritaria"**.
-*   **Evaluación contra Ground Truth:** El sistema alcanzó una precisión superior al 95% detectando las anomalías inyectadas intencionalmente, demostrando que la combinación de reglas simples y estadística es altamente efectiva para auditorías preliminares.
+**Ranking de Riesgo:** Se utiliza una ponderación de severidad (Crítica=3, Alta=2, Media=1). Las mesas con un score acumulado > 12 se clasifican como de **"Revisión Prioritaria"**.
 
----
+**Evaluación contra Ground Truth (métrica aproximada):** En una ejecución reproducible con `RANDOM_SEED = 42`, la comparación por clave exacta `(codigo_alerta, entidad_tipo, entidad_id)` arrojó una **precision_aproximada ~ 0.67** y una **cobertura_aproximada ~ 0.66**. Estos valores son esperables porque (1) el Z-score puede generar señales adicionales no etiquetadas en el ground truth sintético (falsos positivos deliberados para priorización) y (2) el ground truth se evalúa como conjunto de claves, no como verificación documental real.
 
 ## 4. Visualizaciones
 1.  **Alertas por Etapa:** Gráfico de barras que muestra que la mayoría de anomalías críticas ocurren en la etapa de **Resultados** e **Integridad de Archivos**.
 2.  **Histograma de Participación:** Permite visualizar la "curva normal" de votación y las mesas que se encuentran en las "colas" de la distribución (outliers).
 3.  **Boxplot de Nulos e Inválidos:** Resalta visualmente las mesas que se salen del rango intercuartílico, facilitando la detección de supresión de votos.
 4.  **Top 10 Mesas de Riesgo:** Gráfico de barras horizontal que identifica las entidades exactas que requieren una auditoría forense inmediata.
-
----
 
 ## 5. Conclusiones
 - Las **reglas simples** son efectivas para detectar errores administrativos y fraudes evidentes (fallecidos, dobles votos).
