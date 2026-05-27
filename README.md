@@ -4,7 +4,7 @@
 
 ### 📄 [Informe Final (PDF)](./docs/informe.pdf) 
 
-### 🎥 [Video Demostrativo (YouTube)](#)
+### 🎥 [Video Demostrativo (YouTube)](https://youtu.be/ulwzLqOPSCc)
 
 Aplicación académica en Python + Streamlit para detectar anomalías en un proceso electoral simulado. Organiza el análisis por etapa y exporta reportes en CSV.
 
