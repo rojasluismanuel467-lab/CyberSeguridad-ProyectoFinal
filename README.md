@@ -2,7 +2,7 @@
 
 ## Entregables
 
-### 📄 [Informe Final (PDF)](./docs/informe.pdf) 
+### 📄 [Informe Final (PDF)](./docs/reporte.pdf) 
 
 ### 🎥 [Video Demostrativo (YouTube)](https://youtu.be/ulwzLqOPSCc)
 
